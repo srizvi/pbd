@@ -38,7 +38,7 @@ export function Hero() {
       <div className="mx-auto max-w-2xl px-6 py-32 sm:py-48 md:max-w-5xl md:px-8 lg:py-56">
         <div className="hidden sm:mb-8 sm:justify-center">
           <div className="relative rounded-md border px-3 py-1 text-sm leading-6 text-muted-foreground">
-            Pale Blue Dot releases white paper on enterprise AI.{' '}
+            Pale Blue Nukta releases white paper on enterprise AI.{' '}
             <a href="/blog" className="font-semibold text-alternate">
               <span aria-hidden="true" className="absolute inset-0" />
               Read more <span aria-hidden="true">&rarr;</span>
@@ -52,9 +52,8 @@ export function Hero() {
             </span>
           </h1>
           <p className="mx-auto mt-6 max-w-3xl text-pretty text-lg leading-8 text-muted-foreground lg:text-xl">
-            For those already at the top, we engineer the next summit. Our
-            strategies push the boundaries of what's achievable, ensuring you
-            stay lightyears ahead.
+            For those already at the top, we engineer the next summit. Our strategies push the
+            boundaries of what's achievable, ensuring you stay lightyears ahead.
           </p>
           <div className="mt-10 flex items-center justify-center gap-x-6">
             <Link

@@ -8,25 +8,26 @@ import '#/styles/globals.css';
 
 import { siteConfig } from '#/config/site';
 import { socialConfig } from '#/config/social';
-import { SITE_URL } from '#/lib/constants';
+import { env } from '#/env';
+import { siteUrl } from '#/lib/constants';
 import { Providers } from '#/lib/providers';
 
 export const metadata: Metadata = {
-  metadataBase: new URL(
-    // eslint-disable-next-line no-restricted-properties
-    process.env.VERCEL_ENV === 'production' ? siteConfig.url : SITE_URL,
-  ),
+  metadataBase: new URL(env.VERCEL_ENV === 'production' ? siteConfig.url : siteUrl),
   title: {
     template: `%s :: ${siteConfig.name}`,
     default: `${siteConfig.name} :: A Different Perspective`,
   },
   description: siteConfig.description,
+  alternates: {
+    canonical: siteConfig.url,
+  },
   keywords: [
     'Top Management Consulting Firm',
     'Best Management Consulting Company',
     "Pakistan's Best Management Consulting Firm",
     'Rehan Shaikh',
-    'Pale Blue Dot',
+    'Pale Blue Nukta',
   ],
   authors: [
     {
@@ -67,11 +68,7 @@ export const viewport: Viewport = {
   colorScheme: 'dark light',
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" suppressHydrationWarning className="scroll-smooth">
       <body

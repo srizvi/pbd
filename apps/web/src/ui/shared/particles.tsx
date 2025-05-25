@@ -1,12 +1,6 @@
 'use client';
 
-import React, {
-  useCallback,
-  useEffect,
-  useMemo,
-  useRef,
-  useState,
-} from 'react';
+import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import debounce from 'lodash/debounce';
 
 interface MousePosition {
@@ -143,12 +137,7 @@ const Particles: React.FC<ParticlesProps> = ({
 
   const clearContext = useCallback(() => {
     if (context.current) {
-      context.current.clearRect(
-        0,
-        0,
-        canvasSize.current.w,
-        canvasSize.current.h,
-      );
+      context.current.clearRect(0, 0, canvasSize.current.w, canvasSize.current.h);
     }
   }, []);
 
@@ -162,15 +151,8 @@ const Particles: React.FC<ParticlesProps> = ({
   }, [quantity, circleParams, drawCircle, clearContext]);
 
   const remapValue = useCallback(
-    (
-      value: number,
-      start1: number,
-      end1: number,
-      start2: number,
-      end2: number,
-    ): number => {
-      const remapped =
-        ((value - start1) * (end2 - start2)) / (end1 - start1) + start2;
+    (value: number, start1: number, end1: number, start2: number, end2: number): number => {
+      const remapped = ((value - start1) * (end2 - start2)) / (end1 - start1) + start2;
       return remapped > 0 ? remapped : 0;
     },
     [],
@@ -186,9 +168,7 @@ const Particles: React.FC<ParticlesProps> = ({
         canvasSize.current.h - circle.y - circle.translateY - circle.size,
       ];
       const closestEdge = edge.reduce((a, b) => Math.min(a, b));
-      const remapClosestEdge = parseFloat(
-        remapValue(closestEdge, 0, 20, 0, 1).toFixed(2),
-      );
+      const remapClosestEdge = parseFloat(remapValue(closestEdge, 0, 20, 0, 1).toFixed(2));
       if (remapClosestEdge > 1) {
         circle.alpha += 0.02;
         if (circle.alpha > circle.targetAlpha) {
@@ -200,11 +180,9 @@ const Particles: React.FC<ParticlesProps> = ({
       circle.x += circle.dx + vx;
       circle.y += circle.dy + vy;
       circle.translateX +=
-        (mouse.current.x / (staticity / circle.magnetism) - circle.translateX) /
-        ease;
+        (mouse.current.x / (staticity / circle.magnetism) - circle.translateX) / ease;
       circle.translateY +=
-        (mouse.current.y / (staticity / circle.magnetism) - circle.translateY) /
-        ease;
+        (mouse.current.y / (staticity / circle.magnetism) - circle.translateY) / ease;
 
       drawCircle(circle, true);
 
@@ -220,16 +198,7 @@ const Particles: React.FC<ParticlesProps> = ({
       }
     });
     requestAnimationFrame(animate);
-  }, [
-    clearContext,
-    remapValue,
-    vx,
-    vy,
-    staticity,
-    ease,
-    drawCircle,
-    circleParams,
-  ]);
+  }, [clearContext, remapValue, vx, vy, staticity, ease, drawCircle, circleParams]);
 
   const resizeCanvas = useCallback(() => {
     if (canvasContainerRef.current && canvasRef.current && context.current) {
@@ -249,10 +218,7 @@ const Particles: React.FC<ParticlesProps> = ({
     drawParticles();
   }, [resizeCanvas, drawParticles]);
 
-  const debouncedResize = useMemo(
-    () => debounce(resizeCanvas, 250),
-    [resizeCanvas],
-  );
+  const debouncedResize = useMemo(() => debounce(resizeCanvas, 250), [resizeCanvas]);
 
   useEffect(() => {
     if (canvasRef.current) {

@@ -10,7 +10,7 @@ interface LogoProps {
 export default function Logo({ className, href }: LogoProps) {
   const LogoContent = (
     <>
-      <span className="sr-only">Pale Blue Dot</span>
+      <span className="sr-only">Pale Blue Nukta</span>
       <svg
         className="h-full w-full"
         viewBox="0 0 72 72"
@@ -29,7 +29,7 @@ export default function Logo({ className, href }: LogoProps) {
       <Link
         href="/"
         className={cn('inline-flex', className)}
-        aria-label="A round circle representing Pale Blue Dot's Logo"
+        aria-label="A round circle representing Pale Blue Nukta's Logo"
       >
         {LogoContent}
       </Link>

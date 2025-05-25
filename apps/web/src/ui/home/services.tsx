@@ -39,8 +39,8 @@ export function Services() {
               Beyond conventional boundaries
             </h2>
             <p className="text-xl text-muted-foreground">
-              Our strategies empower you to push past perceived limits, ensuring
-              your enterprise sets new benchmarks for others to aspire to.
+              Our strategies empower you to push past perceived limits, ensuring your enterprise
+              sets new benchmarks for others to aspire to.
             </p>
           </div>
           <div className="group relative mx-auto mb-32 flex w-full max-w-[500px] justify-center md:mb-36">
@@ -49,9 +49,7 @@ export function Services() {
             </div>
             <div className="aspect-video w-full -rotate-1 rounded-2xl border bg-card px-5 py-3 shadow-xl transition duration-300 group-hover:-rotate-0">
               <div className="relative mb-8 flex items-center justify-between before:block before:h-[9px] before:w-[41px] before:bg-[length:16px_9px] before:[background-image:radial-gradient(circle_at_4.5px_4.5px,_hsl(var(--muted-foreground))_4.5px,_transparent_0)] after:w-[41px]">
-                <span className="text-[13px] font-semibold">
-                  AI Regession Analysis
-                </span>
+                <span className="text-[13px] font-semibold">AI Regession Analysis</span>
               </div>
               <div className="whitespace-pre-wrap break-words font-mono text-sm text-muted-foreground blur-sm transition duration-300 group-hover:blur-none [&_span]:opacity-0">
                 <span className="animate-[code-1_10s_infinite] text-foreground">
@@ -113,9 +111,7 @@ export function Services() {
                 <h3 className="mb-2 flex items-center space-x-2 text-lg font-semibold">
                   {service.title}
                 </h3>
-                <p className="text-pretty text-muted-foreground">
-                  {service.description}
-                </p>
+                <p className="text-pretty text-muted-foreground">{service.description}</p>
               </article>
             ))}
           </div>

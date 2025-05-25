@@ -14,7 +14,7 @@ export function Book() {
       <div className="container flex flex-col justify-start pt-16 md:justify-center md:pt-0">
         <div className="h-[calc(100vh-6rem)] overflow-y-auto px-4 py-8 md:h-[600px] md:overflow-y-visible md:px-0 md:py-48">
           <Cal
-            calLink="palebluedot/30min"
+            calLink="pale-blue-nukta/30min"
             config={{
               theme: theme as 'light' | 'dark',
             }}

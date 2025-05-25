@@ -16,9 +16,7 @@ export function Card({ title, description, children, className }: CardProps) {
       )}
     >
       {title && <h2 className="text-2xl font-semibold">{title}</h2>}
-      {description && (
-        <p className="text-pretty text-muted-foreground">{description}</p>
-      )}
+      {description && <p className="text-pretty text-muted-foreground">{description}</p>}
       {children}
     </div>
   );

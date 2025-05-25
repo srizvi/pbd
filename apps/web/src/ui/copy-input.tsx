@@ -30,10 +30,7 @@ export function CopyInput({ value, className }: Props) {
 
   return (
     <div
-      className={cn(
-        'relative flex w-full items-center border border-border px-4 py-2',
-        className,
-      )}
+      className={cn('relative flex w-full items-center border border-border px-4 py-2', className)}
     >
       <div className="pr-7 text-sm text-[#878787]">{value}</div>
       <button type="button" onClick={handleClipboard}>

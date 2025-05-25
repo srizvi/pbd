@@ -29,9 +29,8 @@ export function SectionTeam() {
               <span>Co-founder</span>
 
               <p className="!mt-2 text-sm text-[#878787]">
-                Fullstack developer. Been running his own studio for 10 years
-                offering his service to big companies like Klarna, Viaplay and
-                Expressen.
+                Fullstack developer. Been running his own studio for 10 years offering his service
+                to big companies like Klarna, Viaplay and Expressen.
               </p>
             </Card>
 
@@ -49,24 +48,16 @@ export function SectionTeam() {
               <span className="mb-4">Co-founder</span>
 
               <p className="!mt-2 text-sm text-[#878787]">
-                Designer. Been running his own studio for 2 years offering his
-                service to a range of early stage startups but also big
-                companies like Juni and Estrid. <br />
+                Designer. Been running his own studio for 2 years offering his service to a range of
+                early stage startups but also big companies like Juni and Estrid. <br />
                 <br />
-                Prior to this he was Senior Design Lead at Klarna. He also
-                worked at DDB Stockholm working with Clients such as HM and
-                Volkswagen.
+                Prior to this he was Senior Design Lead at Klarna. He also worked at DDB Stockholm
+                working with Clients such as HM and Volkswagen.
               </p>
             </Card>
           </div>
           <div>
-            <Image
-              src="/images/ai.jpg"
-              alt="Founders"
-              width={650}
-              height={875}
-              quality={100}
-            />
+            <Image src="/images/ai.jpg" alt="Founders" width={650} height={875} quality={100} />
           </div>
           <div className="ml-auto flex w-full items-center space-y-8">
             <h2 className="text-center text-[64px] font-medium leading-tight">

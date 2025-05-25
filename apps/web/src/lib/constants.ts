@@ -1,22 +1,11 @@
 import { env } from '#/env';
 
-// eslint-disable-next-line no-restricted-properties
-export const VERCEL_URL = process.env.NEXT_PUBLIC_VERCEL_URL
-  ? // eslint-disable-next-line no-restricted-properties
-    `https://${process.env.NEXT_PUBLIC_VERCEL_URL}`
-  : '';
+export const isDevelopment = env.NODE_ENV === 'development';
 
-export const SITE_URL =
-  // eslint-disable-next-line no-restricted-properties
-  process.env.NEXT_PUBLIC_VERCEL_ENV === 'preview'
-    ? // eslint-disable-next-line no-restricted-properties
-      `https://${process.env.NEXT_PUBLIC_VERCEL_URL}`
-    : env.NEXT_PUBLIC_APP_URL || VERCEL_URL || 'http://localhost:3000';
+export const siteUrl = env.NEXT_PUBLIC_WEBSITE_URL;
 
 export const ensureStartsWith = (stringToCheck: string, startsWith: string) =>
-  stringToCheck.startsWith(startsWith)
-    ? stringToCheck
-    : `${startsWith}${stringToCheck}`;
+  stringToCheck.startsWith(startsWith) ? stringToCheck : `${startsWith}${stringToCheck}`;
 
 export function formatDate(isoDateString: string): string {
   const date = new Date(isoDateString);

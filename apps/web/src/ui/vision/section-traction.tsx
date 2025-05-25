@@ -35,13 +35,11 @@ export function SectionTraction() {
               <h2 className="text-2xl">Waitlist sign ups</h2>
 
               <p className="text-center text-sm text-[#878787]">
-                We have built Midday in public on X and amassed nearly 4000
-                signups ready to start using Midday.
+                We have built Midday in public on X and amassed nearly 4000 signups ready to start
+                using Midday.
               </p>
 
-              <span className="mt-auto font-mono text-[80px] md:text-[122px]">
-                3453
-              </span>
+              <span className="mt-auto font-mono text-[80px] md:text-[122px]">3453</span>
             </Card>
 
             <Card className="min-h-[365px]">
@@ -81,9 +79,7 @@ export function SectionTraction() {
                   <span className="relative inline-flex h-2 w-2 rounded-full bg-green-500" />
                 </span>
 
-                <span className="mt-auto font-mono text-[80px] md:text-[122px]">
-                  {users}
-                </span>
+                <span className="mt-auto font-mono text-[80px] md:text-[122px]">{users}</span>
               </div>
             </Card>
 
@@ -91,8 +87,7 @@ export function SectionTraction() {
               <h2 className="text-2xl">Transactions</h2>
 
               <p className="text-center text-sm text-[#878787]">
-                We are already handling a significant amount of transaction
-                data.
+                We are already handling a significant amount of transaction data.
               </p>
 
               <div className="flex items-center space-x-4">
@@ -103,18 +98,14 @@ export function SectionTraction() {
 
                 <span className="mt-auto font-mono text-[80px] md:text-[122px]">
                   {transactions &&
-                    Intl.NumberFormat('en', { notation: 'compact' }).format(
-                      transactions,
-                    )}
+                    Intl.NumberFormat('en', { notation: 'compact' }).format(transactions)}
                 </span>
               </div>
             </Card>
           </div>
 
           <div className="relative ml-auto h-full w-full max-w-[820px] border border-border bg-[#0C0C0C] p-6">
-            <h2 className="mb-24 block text-[38px] font-medium">
-              What people say
-            </h2>
+            <h2 className="mb-24 block text-[38px] font-medium">What people say</h2>
 
             <div className="absolute bottom-6 left-[50%] -ml-[110px] -mt-5 flex w-[220px] justify-center">
               <a
@@ -128,13 +119,7 @@ export function SectionTraction() {
               </a>
             </div>
 
-            <Image
-              src="/images/ai.jpg"
-              width={698}
-              height={698}
-              alt="Customers"
-              quality={100}
-            />
+            <Image src="/images/ai.jpg" width={698} height={698} alt="Customers" quality={100} />
           </div>
         </div>
       </div>

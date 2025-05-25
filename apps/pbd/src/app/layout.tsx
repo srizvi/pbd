@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     'Best Management Consulting Company',
     "Pakistan's Best Management Consulting Firm",
     'Rehan Shaikh',
-    'Pale Blue Dot',
+    'Pale Blue Nukta',
   ],
   authors: [
     {
@@ -67,11 +67,7 @@ export const viewport: Viewport = {
   colorScheme: 'dark light',
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" suppressHydrationWarning>
       <body

@@ -1,5 +1,5 @@
 {
-  "name": "pale-blue-dot",
+  "name": "pale-blue-nukta",
   "private": true,
   "engines": {
     "node": ">=20.12.0"
@@ -17,6 +17,7 @@
     "lint:fix": "turbo run lint --continue -- --fix --cache --cache-location node_modules/.cache/.eslintcache",
     "lint:ws": "pnpm dlx sherif@latest",
     "postinstall": "pnpm lint:ws",
+    "test": "turbo run format lint typecheck",
     "typecheck": "turbo run typecheck",
     "ui-add": "turbo run ui-add"
   },

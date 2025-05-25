@@ -9,7 +9,7 @@ export function Ai() {
       <div className="absolute left-4 right-4 top-4 flex justify-between text-lg md:left-8 md:right-8">
         <span>Ask us about</span>
         <span className="text-muted-foreground">
-          <Link href="/">Pale Blue Dot</Link>
+          <Link href="/">Pale Blue Nukta</Link>
         </span>
       </div>
       <div className="container flex min-h-screen flex-col justify-center">
@@ -41,8 +41,7 @@ export function Ai() {
             />
             <div className="px-8">
               <h2 className="text-center text-5xl font-semibold text-primary">
-                AI isn't just a tool. It's the catalyst for enterprise
-                evolution.
+                AI isn't just a tool. It's the catalyst for enterprise evolution.
               </h2>
             </div>
           </div>

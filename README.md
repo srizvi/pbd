@@ -1,3 +1,3 @@
-# Pale Blue Dot
+# Pale Blue Nukta
 
 > 🙌🏽 to **JULIUS MARMINGE** and **MIDDAY LABS AB** who made most of this possible.
