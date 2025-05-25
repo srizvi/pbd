@@ -25,8 +25,7 @@ export function SectionSubscription() {
 
               <h2 className="text-2xl">Free</h2>
               <p className="text-center text-sm text-[#878787]">
-                We will offer a free limited plan for customers to get to know
-                the system.
+                We will offer a free limited plan for customers to get to know the system.
               </p>
             </Card>
 
@@ -37,8 +36,8 @@ export function SectionSubscription() {
 
               <h2 className="text-2xl">TBD/ mo</h2>
               <p className="text-center text-sm text-[#878787]">
-                This is the price new users will pay when we launch. The price
-                is yet to be determined.
+                This is the price new users will pay when we launch. The price is yet to be
+                determined.
               </p>
             </Card>
 
@@ -49,9 +48,8 @@ export function SectionSubscription() {
 
               <h2 className="text-2xl">TBD</h2>
               <p className="text-center text-sm text-[#878787]">
-                This plan will be offered to bigger companies with lots of
-                seats. This will be licensed based and the price is yet to be
-                determined.
+                This plan will be offered to bigger companies with lots of seats. This will be
+                licensed based and the price is yet to be determined.
               </p>
             </Card>
           </div>
@@ -64,43 +62,37 @@ export function SectionSubscription() {
             <Card className="pb-8">
               <h2>Team seats</h2>
               <p className="text-center text-sm text-[#878787]">
-                Additional team members will be per seat pricing. The team will
-                have the ability to invite how many users they want.
+                Additional team members will be per seat pricing. The team will have the ability to
+                invite how many users they want.
               </p>
             </Card>
 
             <Card className="pb-8">
               <h2>Vault storage</h2>
               <p className="text-center text-sm text-[#878787]">
-                A limit will be set to the storage since this is also a moving
-                cost for us. Everything above that limit will cost the users
-                extra. Price is yet to be determined.
+                A limit will be set to the storage since this is also a moving cost for us.
+                Everything above that limit will cost the users extra. Price is yet to be
+                determined.
               </p>
             </Card>
 
             <Card className="pb-8">
               <h2>Custom domain</h2>
               <p className="text-center text-sm text-[#878787]">
-                If the user want a custom inbox email, for example
-                acme.inbox@pbd.ai, we can provide this for an additional fee.
+                If the user want a custom inbox email, for example acme.inbox@pbd.ai, we can provide
+                this for an additional fee.
               </p>
             </Card>
           </div>
 
           <div className="px-4 md:px-0">
-            <a
-              href="https://midday.ai/engine"
-              target="_blank"
-              rel="noreferrer"
-              className="block"
-            >
+            <a href="https://midday.ai/engine" target="_blank" rel="noreferrer" className="block">
               <div className="ful-w mt-8 flex flex-col items-center justify-center space-y-4 border border-border bg-[#121212] p-4 px-6 pb-8 text-center">
                 <h2>Engine</h2>
                 <p className="max-w-[800px] text-center text-sm text-[#878787]">
-                  Midday Engine streamlines banking integrations with a single
-                  API, effortlessly connecting to multiple providers and get one
-                  unified format and UI. We currently utilize our Engine
-                  internally, but we will soon offer it as a paid service.
+                  Midday Engine streamlines banking integrations with a single API, effortlessly
+                  connecting to multiple providers and get one unified format and UI. We currently
+                  utilize our Engine internally, but we will soon offer it as a paid service.
                 </p>
               </div>
             </a>

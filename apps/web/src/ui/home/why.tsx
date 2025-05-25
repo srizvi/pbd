@@ -59,20 +59,15 @@ export function Why() {
               Thriving through uncertainty
             </h2>
             <p className="mt-6 text-lg leading-8 text-muted-foreground">
-              In a world of constant disruption, we help ensure that your
-              enterprise doesn&apos;t just survive challenges, it uses them as
-              fuel for unprecedented growth and success.
+              In a world of constant disruption, we help ensure that your enterprise doesn&apos;t
+              just survive challenges, it uses them as fuel for unprecedented growth and success.
             </p>
           </div>
           <dl className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 text-base leading-7 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3">
             {outcomes.map((outcome) => (
               <div key={outcome.name}>
-                <dt className="text-lg font-semibold text-foreground">
-                  {outcome.name}
-                </dt>
-                <dd className="mt-1 text-muted-foreground">
-                  {outcome.description}
-                </dd>
+                <dt className="text-lg font-semibold text-foreground">{outcome.name}</dt>
+                <dd className="mt-1 text-muted-foreground">{outcome.description}</dd>
               </div>
             ))}
           </dl>

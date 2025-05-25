@@ -59,8 +59,7 @@ export default function Footer() {
         </nav>
         <div className="mt-10 flex items-center justify-center space-x-4">
           <p className="text-xs leading-5 text-[#8D88AA]">
-            © {new Date().getFullYear()} {siteConfig.name}. All Rights
-            Reserved.
+            © {new Date().getFullYear()} {siteConfig.company}. All Rights Reserved.
           </p>
           <ThemeToggle className="border-[#1F1627] bg-transparent text-white" />
         </div>

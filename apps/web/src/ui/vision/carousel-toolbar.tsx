@@ -16,12 +16,7 @@ import {
   DialogTrigger,
 } from '@pbd/ui/dialog';
 import { Icons } from '@pbd/ui/icons';
-import {
-  Tooltip,
-  TooltipContent,
-  TooltipProvider,
-  TooltipTrigger,
-} from '@pbd/ui/tooltip';
+import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@pbd/ui/tooltip';
 
 import { CopyInput } from '#/ui/copy-input';
 
@@ -80,7 +75,7 @@ export function CarouselToolbar({ views }: Props) {
 
   const handleOnShare = () => {
     const popup = popupCenter({
-      url: 'https://twitter.com/intent/tweet?text=Look at this deck by Pale Blue Dot. https://seepaleblue.com/vision. Inspired by @middayai 🙌🏽',
+      url: 'https://twitter.com/intent/tweet?text=Look at this deck by Pale Blue Nukta. https://palebluenukta.com/vision. Inspired by @middayai 🙌🏽',
       title: 'Share',
       w: 800,
       h: 400,
@@ -136,10 +131,7 @@ export function CarouselToolbar({ views }: Props) {
                 <Tooltip>
                   <TooltipTrigger>
                     <DialogTrigger asChild>
-                      <Icons.Share
-                        size={18}
-                        className="-mt-[1px] text-alternate"
-                      />
+                      <Icons.Share size={18} className="-mt-[1px] text-alternate" />
                     </DialogTrigger>
                   </TooltipTrigger>
                   <TooltipContent
@@ -203,16 +195,11 @@ export function CarouselToolbar({ views }: Props) {
           <DialogHeader>
             <DialogTitle>Share</DialogTitle>
           </DialogHeader>
-          <DialogDescription>
-            Share this with your CEO or Chair.
-          </DialogDescription>
+          <DialogDescription>Share this with your CEO or Chair.</DialogDescription>
 
           <div className="grid gap-6 py-4">
-            <CopyInput value="https://seepaleblue.com/vision" />
-            <Button
-              className="flex h-10 w-full items-center space-x-2"
-              onClick={handleOnShare}
-            >
+            <CopyInput value="https://palebluenukta.com/vision" />
+            <Button className="flex h-10 w-full items-center space-x-2" onClick={handleOnShare}>
               <span>Share on</span>
               <FaXTwitter />
             </Button>

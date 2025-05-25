@@ -22,8 +22,8 @@ export function Quote() {
               <figure className="text-center">
                 <blockquote className="mt-6 text-5xl font-semibold md:text-7xl">
                   <p className="text-balance">
-                    Do not go where the path may lead, go instead where there is
-                    no path and leave a trail
+                    Do not go where the path may lead, go instead where there is no path and leave a
+                    trail
                   </p>
                 </blockquote>
                 <figcaption className="mt-6">

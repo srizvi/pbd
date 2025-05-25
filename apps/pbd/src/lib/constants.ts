@@ -14,9 +14,7 @@ export const SITE_URL =
     : env.NEXT_PUBLIC_APP_URL || VERCEL_URL || 'http://localhost:3000';
 
 export const ensureStartsWith = (stringToCheck: string, startsWith: string) =>
-  stringToCheck.startsWith(startsWith)
-    ? stringToCheck
-    : `${startsWith}${stringToCheck}`;
+  stringToCheck.startsWith(startsWith) ? stringToCheck : `${startsWith}${stringToCheck}`;
 
 export function formatDate(isoDateString: string): string {
   const date = new Date(isoDateString);

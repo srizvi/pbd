@@ -9,19 +9,14 @@ const config = {
   arrowParens: 'always',
   bracketSpacing: true,
   endOfLine: 'lf',
-  printWidth: 80,
+  printWidth: 100,
   semi: true,
   singleQuote: true,
   tabWidth: 2,
   trailingComma: 'all',
   useTabs: false,
-  plugins: [
-    '@ianvs/prettier-plugin-sort-imports',
-    'prettier-plugin-tailwindcss',
-  ],
-  tailwindConfig: fileURLToPath(
-    new URL('../../tooling/tailwind/web.ts', import.meta.url),
-  ),
+  plugins: ['@ianvs/prettier-plugin-sort-imports', 'prettier-plugin-tailwindcss'],
+  tailwindConfig: fileURLToPath(new URL('../../tooling/tailwind/web.ts', import.meta.url)),
   tailwindFunctions: ['cn', 'cva'],
   importOrder: [
     '<TYPES>',

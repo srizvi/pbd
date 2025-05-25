@@ -2,8 +2,8 @@ import type { MetadataRoute } from 'next';
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: 'Pale Blue Dot',
-    short_name: 'Pale Blue Dot',
+    name: 'Pale Blue Nukta',
+    short_name: 'Pale Blue Nukta',
     icons: [
       {
         src: '/icon3.png',

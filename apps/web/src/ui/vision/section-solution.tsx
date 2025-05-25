@@ -16,12 +16,7 @@ export function SectionSolution() {
         <div className="grid h-[580px] gap-8 overflow-auto px-4 pb-[100px] md:h-auto md:grid-cols-3 md:px-0 md:pb-0 md:pt-0">
           <div className="space-y-8">
             <Card>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width={74}
-                height={57}
-                fill="none"
-              >
+              <svg xmlns="http://www.w3.org/2000/svg" width={74} height={57} fill="none">
                 <path
                   fill="#F5F5F3"
                   d="M13.667 56.667v-30.5l-9.334 7.166-4-5.333L37 0l13.333 10.167V3.333h10v14.5L73.667 28l-4 5.333-9.334-7.166v30.5h-20v-20h-6.666v20h-20ZM20.333 50H27V30h20v20h6.667V21.083L37 8.417 20.333 21.083V50Zm10-26.583h13.334c0-1.778-.667-3.236-2-4.375-1.334-1.14-2.89-1.709-4.667-1.709-1.778 0-3.333.57-4.667 1.709-1.333 1.139-2 2.597-2 4.375Z"
@@ -31,22 +26,15 @@ export function SectionSolution() {
               <h2 className="text-2xl">One OS</h2>
 
               <p className="text-center text-sm text-[#878787]">
-                We set out on a journey to develop an all-encompassing business
-                operating system. Our overarching aim is to empower
-                entrepreneurs by providing them with a comprehensive suite of
-                tools that not only streamlines tedious tasks but also
-                facilitates the acquisition of deeper insights into their
-                businesses.
+                We set out on a journey to develop an all-encompassing business operating system.
+                Our overarching aim is to empower entrepreneurs by providing them with a
+                comprehensive suite of tools that not only streamlines tedious tasks but also
+                facilitates the acquisition of deeper insights into their businesses.
               </p>
             </Card>
 
             <Card>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width={80}
-                height={80}
-                fill="none"
-              >
+              <svg xmlns="http://www.w3.org/2000/svg" width={80} height={80} fill="none">
                 <mask
                   id="a"
                   width={80}
@@ -71,32 +59,25 @@ export function SectionSolution() {
               <h2 className="text-2xl">Intermediary</h2>
 
               <p className="text-center text-sm text-[#878787]">
-                Midday serves as the bridge between you and your accountant,
-                streamlining your month-end procedures, reducing manual work,
-                and easily packaging everything up for financial review. By
-                prioritizing user experience over building a accountant system,
-                we ensure our platform remains user-friendly and entirely
-                focused on what entrepreneurs need. This approach enables us to
-                scale quickly and globally without the need to navigate domestic
-                tax laws and change accountants current workflows.
+                Midday serves as the bridge between you and your accountant, streamlining your
+                month-end procedures, reducing manual work, and easily packaging everything up for
+                financial review. By prioritizing user experience over building a accountant system,
+                we ensure our platform remains user-friendly and entirely focused on what
+                entrepreneurs need. This approach enables us to scale quickly and globally without
+                the need to navigate domestic tax laws and change accountants current workflows.
               </p>
             </Card>
           </div>
           <div className="space-y-8">
             <div className="px-8">
               <h2 className="text-center text-[42px] leading-[58px]">
-                We offer business insights and automates tedious tasks, freeing
-                users to focus on what they love.
+                We offer business insights and automates tedious tasks, freeing users to focus on
+                what they love.
               </h2>
             </div>
 
             <Card>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width={80}
-                height={80}
-                fill="none"
-              >
+              <svg xmlns="http://www.w3.org/2000/svg" width={80} height={80} fill="none">
                 <mask
                   id="a"
                   width={80}
@@ -121,26 +102,19 @@ export function SectionSolution() {
               <h2 className="text-2xl">User friendly & AI</h2>
 
               <p className="text-center text-sm text-[#878787]">
-                We're focusing on building the platform with our community to
-                ensure it's as user-friendly as possible and covers all the
-                features needed to assist as many business owners as possible.
-                We've all witnessed the rise of AI, and we've already integrated
-                various AI aspects into our platform. For instance, we've
-                implemented features such as matching receipts to transactions,
-                category automation, and engaging with your financials through
-                Midday AI, allowing users to ask for any insights they may need.
+                We're focusing on building the platform with our community to ensure it's as
+                user-friendly as possible and covers all the features needed to assist as many
+                business owners as possible. We've all witnessed the rise of AI, and we've already
+                integrated various AI aspects into our platform. For instance, we've implemented
+                features such as matching receipts to transactions, category automation, and
+                engaging with your financials through Midday AI, allowing users to ask for any
+                insights they may need.
               </p>
             </Card>
           </div>
 
           <div className="ml-auto w-full">
-            <Image
-              src="/images/ai.jpg"
-              alt="Overview"
-              width={650}
-              height={875}
-              quality={100}
-            />
+            <Image src="/images/ai.jpg" alt="Overview" width={650} height={875} quality={100} />
           </div>
         </div>
       </div>
