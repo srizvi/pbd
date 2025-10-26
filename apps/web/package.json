@@ -27,7 +27,7 @@
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-hls-player": "^3.0.7",
-    "react-hotkeys-hook": "^4.5.0",
+    "react-hotkeys-hook": "^4.6.2",
     "three": "^0.166.1",
     "three-globe": "^2.31.1"
   },
