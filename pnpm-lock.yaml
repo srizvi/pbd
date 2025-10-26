@@ -21,7 +21,7 @@ importers:
         specifier: ^2.5.8
         version: 2.5.8
       typescript:
-        specifier: ^5.5.3
+        specifier: ^5.9.3
         version: 5.9.3
 
   apps/pbd:
@@ -61,7 +61,7 @@ importers:
         specifier: workspace:*
         version: link:../../tooling/typescript
       '@types/node':
-        specifier: ^20.14.9
+        specifier: ^20.19.23
         version: 20.19.23
       '@types/react':
         specifier: ^18.3.3
@@ -73,7 +73,7 @@ importers:
         specifier: ^10.0.0
         version: 10.0.0
       eslint:
-        specifier: ^9.6.0
+        specifier: ^9.37.0
         version: 9.38.0(jiti@1.21.7)
       jiti:
         specifier: ^1.21.7
@@ -85,7 +85,7 @@ importers:
         specifier: ^3.4.18
         version: 3.4.18
       typescript:
-        specifier: ^5.5.3
+        specifier: ^5.9.3
         version: 5.9.3
 
   apps/web:
@@ -94,7 +94,7 @@ importers:
         specifier: ^1.5.3
         version: 1.5.3(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@headlessui/react':
-        specifier: ^2.0.4
+        specifier: ^2.2.9
         version: 2.2.9(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@pbn/ui':
         specifier: workspace:*
@@ -109,7 +109,7 @@ importers:
         specifier: ^0.13.8
         version: 0.13.8(typescript@5.9.3)(zod@4.1.12)
       framer-motion:
-        specifier: ^11.2.13
+        specifier: ^11.18.2
         version: 11.18.2(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       geist:
         specifier: ^1.5.1
@@ -155,7 +155,7 @@ importers:
         specifier: ^4.17.20
         version: 4.17.20
       '@types/node':
-        specifier: ^20.14.9
+        specifier: ^20.19.23
         version: 20.19.23
       '@types/react':
         specifier: ^18.3.3
@@ -167,7 +167,7 @@ importers:
         specifier: ^10.0.0
         version: 10.0.0
       eslint:
-        specifier: ^9.6.0
+        specifier: ^9.37.0
         version: 9.38.0(jiti@1.21.7)
       jiti:
         specifier: ^1.21.7
@@ -179,7 +179,7 @@ importers:
         specifier: ^3.4.18
         version: 3.4.18
       typescript:
-        specifier: ^5.5.3
+        specifier: ^5.9.3
         version: 5.9.3
 
   packages/ui:
@@ -206,7 +206,7 @@ importers:
         specifier: ^0.7.1
         version: 0.7.1
       embla-carousel-react:
-        specifier: ^8.1.6
+        specifier: ^8.6.0
         version: 8.6.0(react@18.3.1)
       next-themes:
         specifier: ^0.4.6
@@ -237,13 +237,13 @@ importers:
         specifier: workspace:*
         version: link:../../tooling/typescript
       '@types/node':
-        specifier: ^20.14.9
+        specifier: ^20.19.23
         version: 20.19.23
       '@types/react':
         specifier: ^18.3.3
         version: 18.3.26
       eslint:
-        specifier: ^9.6.0
+        specifier: ^9.37.0
         version: 9.38.0(jiti@1.21.7)
       prettier:
         specifier: ^3.6.2
@@ -255,7 +255,7 @@ importers:
         specifier: ^3.4.18
         version: 3.4.18
       typescript:
-        specifier: ^5.5.3
+        specifier: ^5.9.3
         version: 5.9.3
 
   tooling/eslint:
@@ -289,13 +289,13 @@ importers:
         specifier: workspace:*
         version: link:../typescript
       eslint:
-        specifier: ^9.6.0
+        specifier: ^9.37.0
         version: 9.38.0(jiti@1.21.7)
       prettier:
         specifier: ^3.6.2
         version: 3.6.2
       typescript:
-        specifier: ^5.5.3
+        specifier: ^5.9.3
         version: 5.9.3
 
   tooling/github: {}
@@ -316,7 +316,7 @@ importers:
         specifier: workspace:*
         version: link:../typescript
       typescript:
-        specifier: ^5.5.3
+        specifier: ^5.9.3
         version: 5.9.3
 
   tooling/tailwind:
@@ -347,13 +347,13 @@ importers:
         specifier: workspace:*
         version: link:../typescript
       eslint:
-        specifier: ^9.6.0
+        specifier: ^9.37.0
         version: 9.38.0(jiti@1.21.7)
       prettier:
         specifier: ^3.6.2
         version: 3.6.2
       typescript:
-        specifier: ^5.5.3
+        specifier: ^5.9.3
         version: 5.9.3
 
   tooling/typescript: {}

@@ -15,12 +15,12 @@
   },
   "dependencies": {
     "@calcom/embed-react": "^1.5.3",
-    "@headlessui/react": "^2.0.4",
+    "@headlessui/react": "^2.2.9",
     "@pbn/ui": "workspace:*",
     "@react-three/drei": "^9.122.0",
     "@react-three/fiber": "^8.18.0",
     "@t3-oss/env-nextjs": "^0.13.8",
-    "framer-motion": "^11.2.13",
+    "framer-motion": "^11.18.2",
     "geist": "^1.5.1",
     "lodash": "^4.17.21",
     "next": "^14.2.4",
@@ -37,15 +37,15 @@
     "@pbn/tailwind-config": "workspace:*",
     "@pbn/tsconfig": "workspace:*",
     "@types/lodash": "^4.17.20",
-    "@types/node": "^20.14.9",
+    "@types/node": "^20.19.23",
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
     "dotenv-cli": "^10.0.0",
-    "eslint": "^9.6.0",
+    "eslint": "^9.37.0",
     "jiti": "^1.21.7",
     "prettier": "^3.6.2",
     "tailwindcss": "^3.4.18",
-    "typescript": "^5.5.3"
+    "typescript": "^5.9.3"
   },
   "prettier": "@pbn/prettier-config"
 }
