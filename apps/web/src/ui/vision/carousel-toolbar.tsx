@@ -1,12 +1,12 @@
-'use client';
+"use client";
 
-import { AnimatePresence, motion } from 'framer-motion';
-import { useHotkeys } from 'react-hotkeys-hook';
-import { FaXTwitter } from 'react-icons/fa6';
+import { AnimatePresence, motion } from "framer-motion";
+import { useHotkeys } from "react-hotkeys-hook";
+import { FaXTwitter } from "react-icons/fa6";
 
-import { cn } from '@pbd/ui';
-import { Button } from '@pbd/ui/button';
-import { useCarousel } from '@pbd/ui/carousel';
+import { cn } from "@pbn/ui";
+import { Button } from "@pbn/ui/button";
+import { useCarousel } from "@pbn/ui/carousel";
 import {
   Dialog,
   DialogContent,
@@ -14,11 +14,16 @@ import {
   DialogHeader,
   DialogTitle,
   DialogTrigger,
-} from '@pbd/ui/dialog';
-import { Icons } from '@pbd/ui/icons';
-import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@pbd/ui/tooltip';
+} from "@pbn/ui/dialog";
+import { Icons } from "@pbn/ui/icons";
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from "@pbn/ui/tooltip";
 
-import { CopyInput } from '#/ui/copy-input';
+import { CopyInput } from "#/ui/copy-input";
 
 interface Props {
   views: number;
@@ -70,13 +75,13 @@ const popupCenter = ({
 export function CarouselToolbar({ views }: Props) {
   const api = useCarousel();
 
-  useHotkeys('arrowRight', () => api.scrollNext(), [api]);
-  useHotkeys('arrowLeft', () => api.scrollPrev(), [api]);
+  useHotkeys("arrowRight", () => api.scrollNext(), [api]);
+  useHotkeys("arrowLeft", () => api.scrollPrev(), [api]);
 
   const handleOnShare = () => {
     const popup = popupCenter({
-      url: 'https://twitter.com/intent/tweet?text=Look at this deck by Pale Blue Nukta. https://palebluenukta.com/vision. Inspired by @middayai 🙌🏽',
-      title: 'Share',
+      url: "https://twitter.com/intent/tweet?text=Look at this deck by Pale Blue Nukta. https://palebluenukta.com/vision. Inspired by @middayai 🙌🏽",
+      title: "Share",
       w: 800,
       h: 400,
     });
@@ -97,8 +102,8 @@ export function CarouselToolbar({ views }: Props) {
                       <Icons.Visibility size={18} className="text-alternate" />
 
                       <span className="text-sm text-foreground dark:text-white">
-                        {Intl.NumberFormat('en', {
-                          notation: 'compact',
+                        {Intl.NumberFormat("en", {
+                          notation: "compact",
                           minimumFractionDigits: 0,
                           maximumFractionDigits: 1,
                         }).format(views)}
@@ -131,7 +136,10 @@ export function CarouselToolbar({ views }: Props) {
                 <Tooltip>
                   <TooltipTrigger>
                     <DialogTrigger asChild>
-                      <Icons.Share size={18} className="-mt-[1px] text-alternate" />
+                      <Icons.Share
+                        size={18}
+                        className="-mt-[1px] text-alternate"
+                      />
                     </DialogTrigger>
                   </TooltipTrigger>
                   <TooltipContent
@@ -148,7 +156,7 @@ export function CarouselToolbar({ views }: Props) {
                       <button
                         type="button"
                         disabled={!api.canScrollPrev}
-                        className={cn(!api.canScrollPrev && 'opacity-50')}
+                        className={cn(!api.canScrollPrev && "opacity-50")}
                         onClick={() => {
                           api.scrollPrev();
                         }}
@@ -168,7 +176,7 @@ export function CarouselToolbar({ views }: Props) {
                       <button
                         type="button"
                         disabled={!api.canScrollNext}
-                        className={cn(!api.canScrollNext && 'opacity-50')}
+                        className={cn(!api.canScrollNext && "opacity-50")}
                         onClick={() => {
                           api.scrollNext();
                         }}
@@ -195,11 +203,16 @@ export function CarouselToolbar({ views }: Props) {
           <DialogHeader>
             <DialogTitle>Share</DialogTitle>
           </DialogHeader>
-          <DialogDescription>Share this with your CEO or Chair.</DialogDescription>
+          <DialogDescription>
+            Share this with your CEO or Chair.
+          </DialogDescription>
 
           <div className="grid gap-6 py-4">
             <CopyInput value="https://palebluenukta.com/vision" />
-            <Button className="flex h-10 w-full items-center space-x-2" onClick={handleOnShare}>
+            <Button
+              className="flex h-10 w-full items-center space-x-2"
+              onClick={handleOnShare}
+            >
               <span>Share on</span>
               <FaXTwitter />
             </Button>

@@ -1,7 +1,7 @@
-import Cal from '@calcom/embed-react';
-import { useTheme } from 'next-themes';
+import Cal from "@calcom/embed-react";
+import { useTheme } from "next-themes";
 
-import Logo from '#/ui/shared/logo';
+import Logo from "#/ui/shared/logo";
 
 export function Book() {
   const { theme } = useTheme();
@@ -16,7 +16,7 @@ export function Book() {
           <Cal
             calLink="pale-blue-nukta/30min"
             config={{
-              theme: theme as 'light' | 'dark',
+              theme: theme as "light" | "dark",
             }}
           />
         </div>

@@ -1,10 +1,10 @@
-'use client';
+"use client";
 
-import { useState } from 'react';
-import { motion } from 'framer-motion';
+import { useState } from "react";
+import { motion } from "framer-motion";
 
-import { cn } from '@pbd/ui';
-import { Icons } from '@pbd/ui/icons';
+import { cn } from "@pbn/ui";
+import { Icons } from "@pbn/ui/icons";
 
 interface Props {
   value: string;
@@ -30,7 +30,10 @@ export function CopyInput({ value, className }: Props) {
 
   return (
     <div
-      className={cn('relative flex w-full items-center border border-border px-4 py-2', className)}
+      className={cn(
+        "relative flex w-full items-center border border-border px-4 py-2",
+        className,
+      )}
     >
       <div className="pr-7 text-sm text-[#878787]">{value}</div>
       <button type="button" onClick={handleClipboard}>

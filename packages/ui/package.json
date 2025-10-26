@@ -1,5 +1,5 @@
 {
-  "name": "@pbd/ui",
+  "name": "@pbn/ui",
   "private": true,
   "version": "0.1.0",
   "type": "module",
@@ -34,10 +34,10 @@
     "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
-    "@pbd/eslint-config": "workspace:*",
-    "@pbd/prettier-config": "workspace:*",
-    "@pbd/tailwind-config": "workspace:*",
-    "@pbd/tsconfig": "workspace:*",
+    "@pbn/eslint-config": "workspace:*",
+    "@pbn/prettier-config": "workspace:*",
+    "@pbn/tailwind-config": "workspace:*",
+    "@pbn/tsconfig": "workspace:*",
     "@types/node": "^20.14.9",
     "@types/react": "^18.3.3",
     "eslint": "^9.6.0",
@@ -49,5 +49,5 @@
   "peerDependencies": {
     "react": "18.3.1"
   },
-  "prettier": "@pbd/prettier-config"
+  "prettier": "@pbn/prettier-config"
 }

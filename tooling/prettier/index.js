@@ -1,4 +1,4 @@
-import { fileURLToPath } from 'url';
+import { fileURLToPath } from "url";
 
 /** @typedef {import("prettier").Config} PrettierConfig */
 /** @typedef {import("prettier-plugin-tailwindcss").PluginOptions} TailwindConfig */
@@ -6,45 +6,50 @@ import { fileURLToPath } from 'url';
 
 /** @type { PrettierConfig | SortImportsConfig | TailwindConfig } */
 const config = {
-  arrowParens: 'always',
+  arrowParens: "always",
   bracketSpacing: true,
-  endOfLine: 'lf',
+  endOfLine: "lf",
   printWidth: 100,
   semi: true,
   singleQuote: true,
   tabWidth: 2,
-  trailingComma: 'all',
+  trailingComma: "all",
   useTabs: false,
-  plugins: ['@ianvs/prettier-plugin-sort-imports', 'prettier-plugin-tailwindcss'],
-  tailwindConfig: fileURLToPath(new URL('../../tooling/tailwind/web.ts', import.meta.url)),
-  tailwindFunctions: ['cn', 'cva'],
-  importOrder: [
-    '<TYPES>',
-    '^(react/(.*)$)|^(react$)|^(react-native(.*)$)',
-    '^(next/(.*)$)|^(next$)',
-    '<THIRD_PARTY_MODULES>',
-    '',
-    '<TYPES>^@pbd',
-    '^@pbd/(.*)$',
-    '',
-    '<TYPES>^[.|..|~]',
-    '^#/',
-    '^[../]',
-    '^[./]',
+  plugins: [
+    "@ianvs/prettier-plugin-sort-imports",
+    "prettier-plugin-tailwindcss",
   ],
-  importOrderParserPlugins: ['typescript', 'jsx', 'decorators-legacy'],
-  importOrderTypeScriptVersion: '4.4.0',
+  tailwindConfig: fileURLToPath(
+    new URL("../../tooling/tailwind/web.ts", import.meta.url),
+  ),
+  tailwindFunctions: ["cn", "cva"],
+  importOrder: [
+    "<TYPES>",
+    "^(react/(.*)$)|^(react$)|^(react-native(.*)$)",
+    "^(next/(.*)$)|^(next$)",
+    "<THIRD_PARTY_MODULES>",
+    "",
+    "<TYPES>^@pbn",
+    "^@pbn/(.*)$",
+    "",
+    "<TYPES>^[.|..|~]",
+    "^#/",
+    "^[../]",
+    "^[./]",
+  ],
+  importOrderParserPlugins: ["typescript", "jsx", "decorators-legacy"],
+  importOrderTypeScriptVersion: "4.4.0",
   overrides: [
     {
-      files: '*.json.hbs',
+      files: "*.json.hbs",
       options: {
-        parser: 'json',
+        parser: "json",
       },
     },
     {
-      files: '*.js.hbs',
+      files: "*.js.hbs",
       options: {
-        parser: 'babel',
+        parser: "babel",
       },
     },
   ],

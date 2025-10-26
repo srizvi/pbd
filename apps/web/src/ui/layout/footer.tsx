@@ -1,10 +1,10 @@
-import Link from 'next/link';
+import Link from "next/link";
 
-import { cn } from '@pbd/ui';
-import { ThemeToggle } from '@pbd/ui/theme';
+import { cn } from "@pbn/ui";
+import { ThemeToggle } from "@pbn/ui/theme";
 
-import { siteConfig } from '#/config/site';
-import Logo from '#/ui/shared/logo';
+import { siteConfig } from "#/config/site";
+import Logo from "#/ui/shared/logo";
 
 interface NavigationItem {
   name: string;
@@ -14,11 +14,11 @@ interface NavigationItem {
 
 const navigation: { main: NavigationItem[] } = {
   main: [
-    { name: 'Vision', href: '/vision' },
-    { name: 'Contact', href: '/contact', disabled: true },
-    { name: 'Privacy', href: '/privacy', disabled: true },
-    { name: 'Terms', href: '/terms', disabled: true },
-    { name: 'Accessibility', href: '/accessibility', disabled: true },
+    { name: "Vision", href: "/vision" },
+    { name: "Contact", href: "/contact", disabled: true },
+    { name: "Privacy", href: "/privacy", disabled: true },
+    { name: "Terms", href: "/terms", disabled: true },
+    { name: "Accessibility", href: "/accessibility", disabled: true },
   ],
 };
 
@@ -38,8 +38,8 @@ export default function Footer() {
               {item.disabled ? (
                 <span
                   className={cn(
-                    'cursor-not-allowed leading-6 text-[#EBE4F1] opacity-50',
-                    'pointer-events-none',
+                    "cursor-not-allowed leading-6 text-[#EBE4F1] opacity-50",
+                    "pointer-events-none",
                   )}
                   aria-disabled="true"
                 >
@@ -59,7 +59,8 @@ export default function Footer() {
         </nav>
         <div className="mt-10 flex items-center justify-center space-x-4">
           <p className="text-xs leading-5 text-[#8D88AA]">
-            © {new Date().getFullYear()} {siteConfig.company}. All Rights Reserved.
+            © {new Date().getFullYear()} {siteConfig.company}. All Rights
+            Reserved.
           </p>
           <ThemeToggle className="border-[#1F1627] bg-transparent text-white" />
         </div>

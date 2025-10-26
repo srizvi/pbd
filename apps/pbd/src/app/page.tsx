@@ -4,7 +4,7 @@ export default function HomePage() {
       <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
         <div className="hidden sm:mb-8 sm:flex sm:justify-center">
           <div className="relative rounded-full border px-3 py-1 text-sm leading-6 text-muted-foreground">
-            Announcing our next round of funding.{' '}
+            Announcing our next round of funding.{" "}
             <a href="#" className="font-semibold text-secondary-foreground">
               <span aria-hidden="true" className="absolute inset-0" />
               Read more <span aria-hidden="true">&rarr;</span>
@@ -16,8 +16,9 @@ export default function HomePage() {
             Data to enrich your online business
           </h1>
           <p className="mt-6 text-lg leading-8 text-muted-foreground">
-            Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat
-            commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua.
+            Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui
+            lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat
+            fugiat aliqua.
           </p>
           <div className="mt-10 flex items-center justify-center gap-x-6">
             <a
@@ -26,7 +27,10 @@ export default function HomePage() {
             >
               Get started
             </a>
-            <a href="#" className="text-sm font-semibold leading-6 text-alternate">
+            <a
+              href="#"
+              className="text-sm font-semibold leading-6 text-alternate"
+            >
               Learn more <span aria-hidden="true">→</span>
             </a>
           </div>
