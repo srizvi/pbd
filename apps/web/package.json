@@ -14,7 +14,7 @@
     "with-env": "dotenv -e ../../.env --"
   },
   "dependencies": {
-    "@calcom/embed-react": "^1.5.0",
+    "@calcom/embed-react": "^1.5.3",
     "@headlessui/react": "^2.0.4",
     "@pbn/ui": "workspace:*",
     "@react-three/drei": "^9.108.3",
