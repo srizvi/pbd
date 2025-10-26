@@ -18,7 +18,7 @@
   },
   "devDependencies": {
     "@pbn/tsconfig": "workspace:*",
-    "typescript": "^5.5.3"
+    "typescript": "^5.9.3"
   },
   "prettier": "@pbn/prettier-config"
 }
