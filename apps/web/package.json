@@ -26,9 +26,9 @@
     "next": "^14.2.4",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "react-hotkeys-hook": "^4.5.0",
-    "three": "^0.166.1",
-    "three-globe": "^2.31.1",
+    "react-hotkeys-hook": "^4.6.2",
+    "three": "^0.180.0",
+    "three-globe": "^2.44.1",
     "zod": "^4.1.12"
   },
   "devDependencies": {
@@ -40,7 +40,7 @@
     "@types/node": "^20.14.9",
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
-    "dotenv-cli": "^7.4.4",
+    "dotenv-cli": "^10.0.0",
     "eslint": "^9.6.0",
     "jiti": "^1.21.7",
     "prettier": "^3.3.2",
