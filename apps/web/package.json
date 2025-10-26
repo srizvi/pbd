@@ -15,7 +15,7 @@
   },
   "dependencies": {
     "@calcom/embed-react": "^1.5.0",
-    "@headlessui/react": "^2.0.4",
+    "@headlessui/react": "^2.2.9",
     "@pbn/ui": "workspace:*",
     "@react-three/drei": "^9.108.3",
     "@react-three/fiber": "^8.16.8",
