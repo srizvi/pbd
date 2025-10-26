@@ -39,7 +39,7 @@
     "@pbn/tailwind-config": "workspace:*",
     "@pbn/tsconfig": "workspace:*",
     "@types/node": "^20.14.9",
-    "@types/react": "^18.3.3",
+    "@types/react": "^18.3.26",
     "eslint": "^9.6.0",
     "prettier": "^3.3.2",
     "react": "^18.3.1",
