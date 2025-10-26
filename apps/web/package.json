@@ -29,7 +29,7 @@
     "react-hls-player": "^3.0.7",
     "react-hotkeys-hook": "^4.5.0",
     "three": "^0.166.1",
-    "three-globe": "^2.31.1"
+    "three-globe": "^2.44.1"
   },
   "devDependencies": {
     "@pbn/eslint-config": "workspace:*",
