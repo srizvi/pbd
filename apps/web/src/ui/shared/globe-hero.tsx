@@ -1,27 +1,27 @@
-"use client";
+'use client';
 
-import React from "react";
-import dynamic from "next/dynamic";
+import React from 'react';
+import dynamic from 'next/dynamic';
 
-const World = dynamic(() => import("./globe").then((m) => m.World), {
+const World = dynamic(() => import('./globe').then((m) => m.World), {
   ssr: false,
 });
 
 export function GlobeHero() {
   const globeConfig = {
     pointSize: 4,
-    globeColor: "#A0C9CB",
+    globeColor: '#A0C9CB',
     showAtmosphere: true,
-    atmosphereColor: "#FFFFFF",
+    atmosphereColor: '#FFFFFF',
     atmosphereAltitude: 0.1,
-    emissive: "#150F1A",
+    emissive: '#150F1A',
     emissiveIntensity: 0.1,
     shininess: 0.9,
-    polygonColor: "rgba(255,255,255,0.7)",
-    ambientLight: "#1746A2",
-    directionalLeftLight: "#ffffff",
-    directionalTopLight: "#ffffff",
-    pointLight: "#5F9DF7",
+    polygonColor: 'rgba(255,255,255,0.7)',
+    ambientLight: '#1746A2',
+    directionalLeftLight: '#ffffff',
+    directionalTopLight: '#ffffff',
+    pointLight: '#5F9DF7',
     arcTime: 2000,
     arcLength: 0.9,
     rings: 1,
@@ -30,7 +30,7 @@ export function GlobeHero() {
     autoRotate: true,
     autoRotateSpeed: 0.1,
   };
-  const colors = ["#49977B", "#5AAF90", "#49977B"];
+  const colors = ['#49977B', '#5AAF90', '#49977B'];
   const majorHubs = [
     {
       order: 1,
