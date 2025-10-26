@@ -1,16 +1,16 @@
-'use client';
+"use client";
 
-import { useEffect, useState } from 'react';
+import { useEffect, useState } from "react";
 
-import type { CarouselApi } from '@pbd/ui/carousel';
-import { Carousel, CarouselContent, CarouselItem } from '@pbd/ui/carousel';
+import type { CarouselApi } from "@pbn/ui/carousel";
+import { Carousel, CarouselContent, CarouselItem } from "@pbn/ui/carousel";
 
-import { Ai } from '#/ui/vision/ai';
-import { Book } from '#/ui/vision/book';
-import { CarouselToolbar } from '#/ui/vision/carousel-toolbar';
-import { Not1, Not2, Not3, Not4, Not5, Not6 } from '#/ui/vision/not';
-import { Reality } from '#/ui/vision/reality';
-import { Start } from '#/ui/vision/start';
+import { Ai } from "#/ui/vision/ai";
+import { Book } from "#/ui/vision/book";
+import { CarouselToolbar } from "#/ui/vision/carousel-toolbar";
+import { Not1, Not2, Not3, Not4, Not5, Not6 } from "#/ui/vision/not";
+import { Reality } from "#/ui/vision/reality";
+import { Start } from "#/ui/vision/start";
 
 export function VisionCarousel() {
   const [api, setApi] = useState<CarouselApi>();
@@ -23,7 +23,7 @@ export function VisionCarousel() {
 
     setCurrent(api.selectedScrollSnap() + 1);
 
-    api.on('select', () => {
+    api.on("select", () => {
       setCurrent(api.selectedScrollSnap() + 1);
     });
   }, [api]);

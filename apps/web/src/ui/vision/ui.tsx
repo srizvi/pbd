@@ -1,4 +1,4 @@
-import { cn } from '@pbd/ui';
+import { cn } from "@pbn/ui";
 
 interface CardProps {
   title?: string;
@@ -11,12 +11,14 @@ export function Card({ title, description, children, className }: CardProps) {
   return (
     <div
       className={cn(
-        'flex flex-col space-y-4 rounded-xl border bg-card px-6 pb-6 pt-8 shadow-md',
+        "flex flex-col space-y-4 rounded-xl border bg-card px-6 pb-6 pt-8 shadow-md",
         className,
       )}
     >
       {title && <h2 className="text-2xl font-semibold">{title}</h2>}
-      {description && <p className="text-pretty text-muted-foreground">{description}</p>}
+      {description && (
+        <p className="text-pretty text-muted-foreground">{description}</p>
+      )}
       {children}
     </div>
   );

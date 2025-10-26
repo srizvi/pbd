@@ -16,7 +16,7 @@ export default function generator(plop: PlopTypes.NodePlopAPI): void {
         type: 'input',
         name: 'name',
         message:
-          'What is the name of the package? (You can skip the `@pbd/` prefix)',
+          'What is the name of the package? (You can skip the `@pbn/` prefix)',
       },
       {
         type: 'input',
@@ -28,8 +28,8 @@ export default function generator(plop: PlopTypes.NodePlopAPI): void {
     actions: [
       (answers) => {
         if ('name' in answers && typeof answers.name === 'string') {
-          if (answers.name.startsWith('@pbd/')) {
-            answers.name = answers.name.replace('@pbd/', '');
+          if (answers.name.startsWith('@pbn/')) {
+            answers.name = answers.name.replace('@pbn/', '');
           }
         }
         return 'Config sanitized';

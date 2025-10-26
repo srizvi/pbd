@@ -1,5 +1,5 @@
 {
-  "name": "@pbd/web",
+  "name": "@pbn/web",
   "version": "0.1.0",
   "private": true,
   "type": "module",
@@ -16,7 +16,7 @@
   "dependencies": {
     "@calcom/embed-react": "^1.5.0",
     "@headlessui/react": "^2.0.4",
-    "@pbd/ui": "workspace:*",
+    "@pbn/ui": "workspace:*",
     "@react-three/drei": "^9.108.3",
     "@react-three/fiber": "^8.16.8",
     "@t3-oss/env-nextjs": "^0.10.1",
@@ -32,10 +32,10 @@
     "three-globe": "^2.31.1"
   },
   "devDependencies": {
-    "@pbd/eslint-config": "workspace:*",
-    "@pbd/prettier-config": "workspace:*",
-    "@pbd/tailwind-config": "workspace:*",
-    "@pbd/tsconfig": "workspace:*",
+    "@pbn/eslint-config": "workspace:*",
+    "@pbn/prettier-config": "workspace:*",
+    "@pbn/tailwind-config": "workspace:*",
+    "@pbn/tsconfig": "workspace:*",
     "@types/lodash": "^4.17.6",
     "@types/node": "^20.14.9",
     "@types/react": "^18.3.3",
@@ -47,5 +47,5 @@
     "tailwindcss": "^3.4.4",
     "typescript": "^5.5.3"
   },
-  "prettier": "@pbd/prettier-config"
+  "prettier": "@pbn/prettier-config"
 }

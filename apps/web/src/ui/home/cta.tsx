@@ -1,7 +1,7 @@
-import Link from 'next/link';
+import Link from "next/link";
 
-import { cn } from '@pbd/ui';
-import { buttonVariants } from '@pbd/ui/button';
+import { cn } from "@pbn/ui";
+import { buttonVariants } from "@pbn/ui/button";
 
 export default function Cta() {
   return (
@@ -12,14 +12,17 @@ export default function Cta() {
             Shape tomorrow's markets today
           </h2>
           <p className="mx-auto mt-6 max-w-xl text-lg leading-8 text-secondary">
-            In a world of constant flux, market leaders don't just adapt, they anticipate and
-            create. We partner to help you to turn global challenges into catalysts for
-            unprecedented growth.
+            In a world of constant flux, market leaders don't just adapt, they
+            anticipate and create. We partner to help you to turn global
+            challenges into catalysts for unprecedented growth.
           </p>
           <div className="mt-10 flex items-center justify-center gap-x-6">
             <Link
               href="/vision"
-              className={cn(buttonVariants({ size: 'lg', variant: 'secondary' }), '')}
+              className={cn(
+                buttonVariants({ size: "lg", variant: "secondary" }),
+                "",
+              )}
             >
               Get in Touch
             </Link>

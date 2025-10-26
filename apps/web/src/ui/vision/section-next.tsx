@@ -1,7 +1,7 @@
-import Image from 'next/image';
-import Link from 'next/link';
+import Image from "next/image";
+import Link from "next/link";
 
-import { Card } from '#/ui/vision/ui';
+import { Card } from "#/ui/vision/ui";
 
 export function SectionNext() {
   return (
@@ -27,11 +27,22 @@ export function SectionNext() {
               />
             </Card>
 
-            <a href="https://midday.ai/engine" target="_blank" rel="noreferrer" className="block">
+            <a
+              href="https://midday.ai/engine"
+              target="_blank"
+              rel="noreferrer"
+              className="block"
+            >
               <Card className="min-h-[370px]">
                 <h2 className="text-xl">Engine</h2>
                 <span className="underline">Read more</span>
-                <Image src="/images/ai.jpg" width={362} height={362} alt="Engine" quality={100} />
+                <Image
+                  src="/images/ai.jpg"
+                  width={362}
+                  height={362}
+                  alt="Engine"
+                  quality={100}
+                />
               </Card>
             </a>
           </div>
@@ -39,7 +50,13 @@ export function SectionNext() {
             <Card className="min-h-[370px]">
               <h2 className="text-xl">Midday AI</h2>
               <span />
-              <Image src="/images/ai.jpg" width={362} height={362} alt="Midday AI" quality={100} />
+              <Image
+                src="/images/ai.jpg"
+                width={362}
+                height={362}
+                alt="Midday AI"
+                quality={100}
+              />
             </Card>
 
             <Card className="min-h-[370px]">
@@ -58,7 +75,13 @@ export function SectionNext() {
           <div className="ml-auto h-full w-full max-w-[820px] border border-border bg-[#0C0C0C] p-6">
             <h2 className="mb-24 block text-xl">Native app</h2>
             <span />
-            <Image src="/images/ai.jpg" width={698} height={698} alt="App" quality={100} />
+            <Image
+              src="/images/ai.jpg"
+              width={698}
+              height={698}
+              alt="App"
+              quality={100}
+            />
           </div>
         </div>
       </div>

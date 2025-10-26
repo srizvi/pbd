@@ -1,7 +1,7 @@
-import Image from 'next/image';
-import Link from 'next/link';
+import Image from "next/image";
+import Link from "next/link";
 
-import { Card } from '#/ui/vision/ui';
+import { Card } from "#/ui/vision/ui";
 
 export function Ai() {
   return (
@@ -41,7 +41,8 @@ export function Ai() {
             />
             <div className="px-8">
               <h2 className="text-center text-5xl font-semibold text-primary">
-                AI isn't just a tool. It's the catalyst for enterprise evolution.
+                AI isn't just a tool. It's the catalyst for enterprise
+                evolution.
               </h2>
             </div>
           </div>

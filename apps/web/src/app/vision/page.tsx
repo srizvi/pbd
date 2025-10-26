@@ -1,10 +1,10 @@
-import type { Metadata } from 'next';
+import type { Metadata } from "next";
 
-import { VisionCarousel } from '#/ui/vision/vision-carousel';
+import { VisionCarousel } from "#/ui/vision/vision-carousel";
 
 export const metadata: Metadata = {
-  title: 'Pitch',
-  description: 'Pitch deck',
+  title: "Pitch",
+  description: "Pitch deck",
 };
 
 export default function Page() {

@@ -1,16 +1,16 @@
-'use client';
+"use client";
 
-import { useEffect, useState } from 'react';
-import { useTheme } from 'next-themes';
+import { useEffect, useState } from "react";
+import { useTheme } from "next-themes";
 
-import Particles from '#/ui/shared/particles';
+import Particles from "#/ui/shared/particles";
 
 export function Quote() {
   const { theme } = useTheme();
-  const [color, setColor] = useState('#ffffff');
+  const [color, setColor] = useState("#ffffff");
 
   useEffect(() => {
-    setColor(theme === 'dark' ? '#ffffff' : '#000000');
+    setColor(theme === "dark" ? "#ffffff" : "#000000");
   }, [theme]);
 
   return (
@@ -22,8 +22,8 @@ export function Quote() {
               <figure className="text-center">
                 <blockquote className="mt-6 text-5xl font-semibold md:text-7xl">
                   <p className="text-balance">
-                    Do not go where the path may lead, go instead where there is no path and leave a
-                    trail
+                    Do not go where the path may lead, go instead where there is
+                    no path and leave a trail
                   </p>
                 </blockquote>
                 <figcaption className="mt-6">
