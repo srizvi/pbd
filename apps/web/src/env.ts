@@ -1,14 +1,12 @@
 /* eslint-disable no-restricted-properties */
-import { createEnv } from "@t3-oss/env-nextjs";
-import { vercel } from "@t3-oss/env-nextjs/presets";
-import { z } from "zod";
+import { createEnv } from '@t3-oss/env-nextjs';
+import { vercel } from '@t3-oss/env-nextjs/presets-zod';
+import { z } from 'zod';
 
 export const env = createEnv({
   extends: [vercel()],
   shared: {
-    NODE_ENV: z
-      .enum(["development", "production", "test"])
-      .default("development"),
+    NODE_ENV: z.enum(['development', 'production', 'test']).default('development'),
   },
   /**
    * Specify your server-side environment variables schema here.
@@ -23,9 +21,7 @@ export const env = createEnv({
    * For them to be exposed to the client, prefix them with `NEXT_PUBLIC_`.
    */
   client: {
-    NEXT_PUBLIC_VERCEL_ENV: z
-      .enum(["development", "preview", "production"])
-      .default("development"),
+    NEXT_PUBLIC_VERCEL_ENV: z.enum(['development', 'preview', 'production']).default('development'),
     NEXT_PUBLIC_WEBSITE_URL: z.string(),
   },
   /**
@@ -36,6 +32,5 @@ export const env = createEnv({
     NEXT_PUBLIC_WEBSITE_URL: process.env.NEXT_PUBLIC_WEBSITE_URL,
     NODE_ENV: process.env.NODE_ENV,
   },
-  skipValidation:
-    !!process.env.CI || process.env.npm_lifecycle_event === "lint",
+  skipValidation: !!process.env.CI || process.env.npm_lifecycle_event === 'lint',
 });

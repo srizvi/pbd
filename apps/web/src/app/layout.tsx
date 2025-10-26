@@ -1,21 +1,19 @@
-import type { Metadata, Viewport } from "next";
-import { GeistMono } from "geist/font/mono";
-import { GeistSans } from "geist/font/sans";
+import type { Metadata, Viewport } from 'next';
+import { GeistMono } from 'geist/font/mono';
+import { GeistSans } from 'geist/font/sans';
 
-import { cn } from "@pbn/ui";
+import { cn } from '@pbn/ui';
 
-import "#/styles/globals.css";
+import '#/styles/globals.css';
 
-import { siteConfig } from "#/config/site";
-import { socialConfig } from "#/config/social";
-import { env } from "#/env";
-import { siteUrl } from "#/lib/constants";
-import { Providers } from "#/lib/providers";
+import { siteConfig } from '#/config/site';
+import { socialConfig } from '#/config/social';
+import { env } from '#/env';
+import { siteUrl } from '#/lib/constants';
+import { Providers } from '#/lib/providers';
 
 export const metadata: Metadata = {
-  metadataBase: new URL(
-    env.VERCEL_ENV === "production" ? siteConfig.url : siteUrl,
-  ),
+  metadataBase: new URL(env.VERCEL_ENV === 'production' ? siteConfig.url : siteUrl),
   title: {
     template: `%s :: ${siteConfig.name}`,
     default: `${siteConfig.name} :: A Different Perspective`,
@@ -25,11 +23,11 @@ export const metadata: Metadata = {
     canonical: siteConfig.url,
   },
   keywords: [
-    "Top Management Consulting Firm",
-    "Best Management Consulting Company",
+    'Top Management Consulting Firm',
+    'Best Management Consulting Company',
     "Pakistan's Best Management Consulting Firm",
-    "Rehan Shaikh",
-    "Pale Blue Nukta",
+    'Rehan Shaikh',
+    'Pale Blue Nukta',
   ],
   authors: [
     {
@@ -38,21 +36,21 @@ export const metadata: Metadata = {
     },
   ],
   creator: siteConfig.name,
-  category: "Management Consulting Firm",
+  category: 'Management Consulting Firm',
   robots: {
     follow: false,
     index: false,
   },
   openGraph: {
-    type: "website",
+    type: 'website',
     title: siteConfig.name,
     description: siteConfig.description,
     url: siteConfig.url,
     siteName: siteConfig.name,
-    locale: "en_US",
+    locale: 'en_US',
   },
   twitter: {
-    card: "summary_large_image",
+    card: 'summary_large_image',
     site: socialConfig.links.twitter,
     creator: socialConfig.links.twitter,
     title: siteConfig.name,
@@ -62,24 +60,20 @@ export const metadata: Metadata = {
 
 export const viewport: Viewport = {
   themeColor: [
-    { media: "(prefers-color-scheme: light)", color: "#FBFBF8" },
-    { media: "(prefers-color-scheme: dark)", color: "#1C1718" },
+    { media: '(prefers-color-scheme: light)', color: '#FBFBF8' },
+    { media: '(prefers-color-scheme: dark)', color: '#1C1718' },
   ],
-  width: "device-width",
+  width: 'device-width',
   initialScale: 1,
-  colorScheme: "dark light",
+  colorScheme: 'dark light',
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" suppressHydrationWarning className="scroll-smooth">
       <body
         className={cn(
-          "min-h-screen bg-background font-sans font-medium text-foreground antialiased",
+          'min-h-screen bg-background font-sans font-medium text-foreground antialiased',
           GeistSans.variable,
           GeistMono.variable,
         )}

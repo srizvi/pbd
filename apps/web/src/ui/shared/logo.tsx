@@ -1,6 +1,6 @@
-import Link from "next/link";
+import Link from 'next/link';
 
-import { cn } from "@pbn/ui";
+import { cn } from '@pbn/ui';
 
 interface LogoProps {
   className?: string;
@@ -28,7 +28,7 @@ export default function Logo({ className, href }: LogoProps) {
     return (
       <Link
         href="/"
-        className={cn("inline-flex", className)}
+        className={cn('inline-flex', className)}
         aria-label="A round circle representing Pale Blue Nukta's Logo"
       >
         {LogoContent}
@@ -36,5 +36,5 @@ export default function Logo({ className, href }: LogoProps) {
     );
   }
 
-  return <div className={cn("inline-flex", className)}>{LogoContent}</div>;
+  return <div className={cn('inline-flex', className)}>{LogoContent}</div>;
 }

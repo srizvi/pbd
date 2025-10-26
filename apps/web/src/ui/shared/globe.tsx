@@ -1,17 +1,17 @@
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-nocheck
-"use client";
+'use client';
 
-import type { Object3DNode } from "@react-three/fiber";
-import { useEffect, useRef, useState } from "react";
-import { OrbitControls } from "@react-three/drei";
-import { Canvas, extend, useThree } from "@react-three/fiber";
-import { Color, Fog, PerspectiveCamera, Scene, Vector3 } from "three";
-import ThreeGlobe from "three-globe";
+import type { Object3DNode } from '@react-three/fiber';
+import { useEffect, useRef, useState } from 'react';
+import { OrbitControls } from '@react-three/drei';
+import { Canvas, extend, useThree } from '@react-three/fiber';
+import { Color, Fog, PerspectiveCamera, Scene, Vector3 } from 'three';
+import ThreeGlobe from 'three-globe';
 
-import countries from "#/data/globe.json";
+import countries from '#/data/globe.json';
 
-declare module "@react-three/fiber" {
+declare module '@react-three/fiber' {
   interface ThreeElements {
     threeGlobe: Object3DNode<ThreeGlobe, typeof ThreeGlobe>;
   }
@@ -82,12 +82,12 @@ export function Globe({ globeConfig, data }: WorldProps) {
 
   const defaultProps = {
     pointSize: 1,
-    atmosphereColor: "#F6DA8D",
+    atmosphereColor: '#F6DA8D',
     showAtmosphere: true,
     atmosphereAltitude: 0.1,
-    polygonColor: "rgba(255,255,255,0.7)",
-    globeColor: "#1d072e",
-    emissive: "#000000",
+    polygonColor: 'rgba(255,255,255,0.7)',
+    globeColor: '#1d072e',
+    emissive: '#000000',
     emissiveIntensity: 0.1,
     shininess: 0.9,
     arcTime: 2000,
@@ -102,7 +102,6 @@ export function Globe({ globeConfig, data }: WorldProps) {
       _buildData();
       _buildMaterial();
     }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [globeRef.current]);
 
   const _buildMaterial = () => {
@@ -147,9 +146,7 @@ export function Globe({ globeConfig, data }: WorldProps) {
     const filteredPoints = points.filter(
       (v, i, a) =>
         a.findIndex((v2) =>
-          ["lat", "lng"].every(
-            (k) => v2[k as "lat" | "lng"] === v[k as "lat" | "lng"],
-          ),
+          ['lat', 'lng'].every((k) => v2[k as 'lat' | 'lng'] === v[k as 'lat' | 'lng']),
         ) === i,
     );
 
@@ -171,7 +168,6 @@ export function Globe({ globeConfig, data }: WorldProps) {
         });
       startAnimation();
     }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [globeData]);
 
   const startAnimation = () => {
@@ -211,9 +207,7 @@ export function Globe({ globeConfig, data }: WorldProps) {
       .ringColor((e: any) => (t: any) => e.color(t))
       .ringMaxRadius(defaultProps.maxRings)
       .ringPropagationSpeed(RING_PROPAGATION_SPEED)
-      .ringRepeatPeriod(
-        (defaultProps.arcTime * defaultProps.arcLength) / defaultProps.rings,
-      );
+      .ringRepeatPeriod((defaultProps.arcTime * defaultProps.arcLength) / defaultProps.rings);
   };
 
   useEffect(() => {
@@ -222,21 +216,14 @@ export function Globe({ globeConfig, data }: WorldProps) {
     const interval = setInterval(() => {
       // eslint-disable-next-line @typescript-eslint/no-unnecessary-condition
       if (!globeRef.current || !globeData) return;
-      numbersOfRings = genRandomNumbers(
-        0,
-        data.length,
-        Math.floor((data.length * 4) / 5),
-      );
+      numbersOfRings = genRandomNumbers(0, data.length, Math.floor((data.length * 4) / 5));
 
-      globeRef.current.ringsData(
-        globeData.filter((d, i) => numbersOfRings.includes(i)),
-      );
+      globeRef.current.ringsData(globeData.filter((d, i) => numbersOfRings.includes(i)));
     }, 2000);
 
     return () => {
       clearInterval(interval);
     };
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [globeRef.current, globeData]);
 
   return (
@@ -253,7 +240,6 @@ export function WebGLRendererConfig() {
     gl.setPixelRatio(window.devicePixelRatio);
     gl.setSize(size.width, size.height);
     gl.setClearColor(0xffaaff, 0);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return null;
