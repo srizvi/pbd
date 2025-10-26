@@ -4,9 +4,6 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
-overrides:
-  '@types/minimatch': 5.1.2
-
 importers:
 
   .:
