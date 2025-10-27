@@ -35,17 +35,16 @@ export function Hero() {
           strokeWidth={0}
         />
       </svg>
-      <div className="mx-auto max-w-2xl px-6 py-32 sm:py-48 md:max-w-6xl md:px-8 lg:py-56">
+      <div className="mx-auto max-w-2xl px-6 py-32 sm:py-48 md:max-w-5xl md:px-8 lg:py-56">
         <div className="text-center">
-          <h1 className="text-secondary-foreground sm:text-balance">
+          <h1 className="text-foreground sm:text-balance">
             <span className="block text-5xl font-semibold lg:text-6xl">
-              How bank leaders convert AI exposure into balance-sheet performance
+              How banking leaders turn AI awareness into measurable profit
             </span>
           </h1>
-          <p className="mx-auto mt-6 max-w-3xl text-lg leading-8 text-muted-foreground sm:text-balance lg:text-2xl">
-            Our AI-stewardship converts AI ambition into capital efficiency, risk control, and
-            growth. From awareness to transformation, we align AI programs with board-level returns,
-            not experiments.
+          <p className="mx-auto mt-6 max-w-3xl text-lg leading-8 text-muted-foreground sm:text-balance lg:text-xl">
+            We enable systematic capability building from literacy to transformation. Each stage
+            delivering exponential returns. Each investment pays for the next.
           </p>
           <div className="mt-10 flex items-center justify-center gap-x-6">
             <Link

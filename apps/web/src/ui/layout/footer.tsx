@@ -22,7 +22,7 @@ const navigation: { main: NavigationItem[] } = {
   ],
 };
 
-export default function Footer() {
+export function Footer() {
   return (
     <footer className="mt-16 w-full border-t bg-[#0A070D]">
       <div className="mx-auto max-w-7xl overflow-hidden px-6 py-20 sm:py-24 lg:px-8">
