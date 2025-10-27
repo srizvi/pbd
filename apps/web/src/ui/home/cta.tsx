@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { cn } from '@pbn/ui';
 import { buttonVariants } from '@pbn/ui/button';
 
-export default function Cta() {
+export function Cta() {
   return (
     <section>
       <div className="mx-auto max-w-7xl py-24 sm:px-6 sm:py-32 lg:px-8">
