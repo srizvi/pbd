@@ -1,3 +1,4 @@
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 import Image from 'next/image';
 
 const people = [
@@ -5,13 +6,13 @@ const people = [
     name: 'Rehan Shaikh',
     role: 'CEO',
     imageSrc: '/rehan.jpg',
-    bio: 'Rehan served as Senior Executive Vice President and member of the Executive Committee at HBL for 5 years. Prior to that he was leading HBL Asset Management as CEO, building the institution from inception with 20 years of experience in mutual funds. Earlier, he spent a decade at State Street Corporation in Boston, managing operations for institutional clients and overseeing the migration of over $111 billion in assets. He served as Chairman of the Mutual Fund Association of Pakistan.',
+    bio: 'Rehan served five years as Senior Executive VP and Executive Committee member at HBL. As CEO of HBL Asset Management, he built the firm from inception. His 20-year mutual fund career includes a decade at State Street Corporation in Boston, managing institutional operations and overseeing $111 billion in asset migrations. Rehan also chaired the Mutual Fund Association of Pakistan.',
   },
   {
     name: 'Sam Shah',
     role: 'Principal Consultant',
     imageSrc: '/sam.jpg',
-    bio: 'Sam spent 13 years at a top management consulting firm as a Senior Partner. Then he lead eBusiness at the largest energy conglomerate in the Far East. In 2008, Sam joined the fastest growing social network, where he led the expansion of worldwide operations for 8 years as lead consultant. He has degrees from UCLA, Stanford and Tsinghua.',
+    bio: "Sam served thirteen years as Senior Partner at a top management consulting firm. Then he directed eBusiness at the Far East's largest energy conglomerate. From 2008 to 2016, he led worldwide operations expansion for a major social media platform as lead consultant. He holds degrees from UCLA, Stanford, and Tsinghua.",
   },
 ];
 
@@ -35,13 +36,13 @@ export function Team() {
               key={person.name}
               className="flex flex-col gap-10 py-12 first:pt-0 last:pb-0 sm:flex-row"
             >
-              <Image
+              {/* <Image
                 alt=""
                 width={400}
                 height={400}
                 src={person.imageSrc}
                 className="aspect-4/5 w-52 flex-none rounded-2xl object-cover outline-1 -outline-offset-1 outline-black/5 dark:outline-white/10"
-              />
+              /> */}
               <div className="max-w-xl flex-auto">
                 <h3 className="text-lg/8 font-semibold tracking-tight text-foreground">
                   {person.name}
