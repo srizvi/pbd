@@ -5,7 +5,7 @@ const people = [
     name: 'Rehan Shaikh',
     role: 'CEO',
     imageSrc: '/rehan.jpg',
-    bio: 'Rehan served as Senior Executive Vice President at HBL and member of the Executive Committee before leading HBL Asset Management as CEO, building the institution from inception with 19 years of experience in mutual funds. Earlier, he spent a decade at State Street Corporation in Boston, managing operations for institutional clients and overseeing the migration of over $111 billion in assets. He served as Chairman of the Mutual Fund Association of Pakistan.',
+    bio: 'Rehan served as Senior Executive Vice President and member of the Executive Committee at HBL for 5 years. Prior to that he was leading HBL Asset Management as CEO, building the institution from inception with 20 years of experience in mutual funds. Earlier, he spent a decade at State Street Corporation in Boston, managing operations for institutional clients and overseeing the migration of over $111 billion in assets. He served as Chairman of the Mutual Fund Association of Pakistan.',
   },
   {
     name: 'Sam Shah',
