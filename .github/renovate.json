@@ -5,12 +5,8 @@
   "semanticCommitType": "chore",
   "semanticCommitScope": "deps",
   "dependencyDashboardTitle": "chore: dependency dashboard",
-  "dependencyDashboardLabels": [
-    "🧹 chore",
-    "🔗 dependencies",
-    "🤖 renovatebot"
-  ],
-  "labels": ["🧹 chore", "🔗 dependencies", "🤖 renovatebot"],
+  "dependencyDashboardLabels": ["chore", "dependencies", "renovatebot"],
+  "labels": ["chore", "dependencies", "renovatebot"],
   "automerge": false,
   "packageRules": [
     {
@@ -25,11 +21,8 @@
   "updateInternalDeps": true,
   "rangeStrategy": "bump",
   "npm": {
-    "managerFilePatterns": [
-      "/(^|/)package\\.json$/",
-      "/(^|/)package\\.json\\.hbs$/"
-    ]
+    "managerFilePatterns": ["/(^|/)package\\.json$/", "/(^|/)package\\.json\\.hbs$/"]
   },
   "timezone": "Asia/Singapore",
-  "schedule": ["every weekend"]
+  "schedule": ["* * 1,15 * *"]
 }
