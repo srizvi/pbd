@@ -17,7 +17,7 @@
     "@calcom/embed-react": "^1.5.3",
     "@headlessui/react": "^2.2.9",
     "@pbn/ui": "workspace:*",
-    "@react-three/drei": "^9.122.0",
+    "@react-three/drei": "^10.7.7",
     "@react-three/fiber": "^8.18.0",
     "@t3-oss/env-nextjs": "^0.13.8",
     "framer-motion": "^11.18.2",
