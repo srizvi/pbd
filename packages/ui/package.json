@@ -38,7 +38,7 @@
     "@pbn/prettier-config": "workspace:*",
     "@pbn/tailwind-config": "workspace:*",
     "@pbn/tsconfig": "workspace:*",
-    "@types/node": "^22.19.1",
+    "@types/node": "^22.19.2",
     "@types/react": "^18.3.26",
     "eslint": "^9.38.0",
     "prettier": "^3.6.2",
