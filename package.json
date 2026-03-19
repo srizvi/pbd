@@ -2,9 +2,9 @@
   "name": "pale-blue-nukta",
   "private": true,
   "engines": {
-    "node": ">=22.22.0"
+    "node": ">=22.22.1"
   },
-  "packageManager": "pnpm@10.19.0+sha512.c9fc7236e92adf5c8af42fd5bf1612df99c2ceb62f27047032f4720b33f8eacdde311865e91c411f2774f618d82f320808ecb51718bfa82c060c4ba7c76a32b8",
+  "packageManager": "pnpm@10.32.0+sha512.9b2634bb3fed5601c33633f2d92593f506270a3963b8c51d2b2d6a828da615ce4e9deebef9614ccebbc13ac8d3c0f9c9ccceb583c69c8578436fa477dbb20d70",
   "scripts": {
     "build": "turbo run build",
     "clean": "git clean -xdf node_modules",
