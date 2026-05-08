@@ -37,7 +37,7 @@
     "@pbn/tailwind-config": "workspace:*",
     "@pbn/tsconfig": "workspace:*",
     "@types/lodash": "^4.17.24",
-    "@types/node": "^22.19.2",
+    "@types/node": "^22.19.18",
     "@types/react": "^18.3.28",
     "@types/react-dom": "^18.3.7",
     "dotenv-cli": "^10.0.0",
