@@ -4,7 +4,6 @@ packages:
   - tooling/*
 
 overrides:
-  '@types/minimatch': 5.1.2
   glob: 10.5.0
   'minimatch@^9.0.4': 9.0.9
   'minimatch@^3.1.2': 3.1.5
