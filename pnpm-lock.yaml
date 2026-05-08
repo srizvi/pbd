@@ -77,8 +77,8 @@ importers:
         specifier: ^0.184.0
         version: 0.184.0
       three-globe:
-        specifier: ^2.44.1
-        version: 2.44.1(three@0.184.0)
+        specifier: ^2.45.2
+        version: 2.45.2(three@0.184.0)
       zod:
         specifier: ^4.1.12
         version: 4.1.12
@@ -3232,8 +3232,8 @@ packages:
     peerDependencies:
       three: '>=0.72.0'
 
-  three-globe@2.44.1:
-    resolution: {integrity: sha512-v0Q4tgEulvKyjj5P73v9/cH/3CjhStgHhSsoK7owj9ktaf56DiZC+oITi7x8pB3zAmUJlLJjj8I1BOCzzk9RNg==}
+  three-globe@2.45.2:
+    resolution: {integrity: sha512-3qJE2LAdyHsUPt02mgMRc+PG3j9kGEA0fUYrwKPGIVtvMR1XjDn9hCXu31AWocdgHOFcXkrRVz7jJZzTIvR0eQ==}
     engines: {node: '>=12'}
     peerDependencies:
       three: '>=0.154'
@@ -6495,7 +6495,7 @@ snapshots:
       earcut: 3.0.2
       three: 0.184.0
 
-  three-globe@2.44.1(three@0.184.0):
+  three-globe@2.45.2(three@0.184.0):
     dependencies:
       '@tweenjs/tween.js': 25.0.0
       accessor-fn: 1.5.3
