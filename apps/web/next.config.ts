@@ -1,10 +1,7 @@
-import { fileURLToPath } from 'url';
+import type { NextConfig } from 'next';
 import { createJiti } from 'jiti';
 
-await createJiti(fileURLToPath(import.meta.url)).import('./src/env');
-
-/** @type {import("next").NextConfig} */
-const config = {
+const config: NextConfig = {
   reactStrictMode: true,
 
   /** Enables hot reloading for local packages without a build step */
@@ -13,9 +10,10 @@ const config = {
   /** We already do linting and typechecking as separate tasks in CI */
   eslint: { ignoreDuringBuilds: true },
   typescript: { ignoreBuildErrors: true },
-
-  /** Configure `pageExtensions` to include MDX files */
-  pageExtensions: ['js', 'jsx', 'mdx', 'ts', 'tsx'],
 };
 
-export default config;
+export default async function nextConfig(): Promise<NextConfig> {
+  await createJiti(import.meta.url).import('./src/env');
+
+  return config;
+}

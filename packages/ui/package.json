@@ -39,15 +39,15 @@
     "@pbn/tailwind-config": "workspace:*",
     "@pbn/tsconfig": "workspace:*",
     "@types/node": "^22.19.18",
-    "@types/react": "^18.3.28",
+    "@types/react": "^19.2.14",
     "eslint": "^9.39.4",
     "prettier": "^3.8.3",
-    "react": "^18.3.1",
+    "react": "^19.2.6",
     "tailwindcss": "^3.4.19",
     "typescript": "^5.9.3"
   },
   "peerDependencies": {
-    "react": "18.3.1"
+    "react": "19.2.6"
   },
   "prettier": "@pbn/prettier-config"
 }
