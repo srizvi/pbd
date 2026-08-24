@@ -11,7 +11,8 @@ export default [
     },
     rules: {
       ...reactPlugin.configs['jsx-runtime'].rules,
-      ...hooksPlugin.configs.recommended.rules,
+      'react-hooks/rules-of-hooks': 'error',
+      'react-hooks/exhaustive-deps': 'warn',
     },
     languageOptions: {
       globals: {
