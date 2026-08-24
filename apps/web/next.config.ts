@@ -7,8 +7,10 @@ const config: NextConfig = {
   /** Enables hot reloading for local packages without a build step */
   transpilePackages: ['@pbn/ui'],
 
-  /** We already do linting and typechecking as separate tasks in CI */
-  eslint: { ignoreDuringBuilds: true },
+  /** Next.js 16 only optimizes explicitly allowed image quality values */
+  images: { qualities: [75, 100] },
+
+  /** We already do typechecking as a separate task in CI */
   typescript: { ignoreBuildErrors: true },
 };
 

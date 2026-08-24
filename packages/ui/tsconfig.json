@@ -2,6 +2,7 @@
   "extends": "@pbn/tsconfig/internal-package.json",
   "compilerOptions": {
     "lib": ["dom", "dom.iterable", "ES2022"],
+    "types": ["node", "react"],
     "jsx": "preserve",
     "tsBuildInfoFile": "node_modules/.cache/tsbuildinfo.json"
   },
