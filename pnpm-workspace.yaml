@@ -3,6 +3,10 @@ packages:
   - packages/*
   - tooling/*
 
+allowBuilds:
+  esbuild: true
+  sharp: true
+
 overrides:
   glob: 13.0.6
   'minimatch@^9.0.4': 10.2.5
