@@ -41,7 +41,7 @@
     "@types/react": "19.2.18",
     "@types/react-dom": "19.2.5",
     "dotenv-cli": "11.0.0",
-    "eslint": "10.8.0",
+    "eslint": "10.9.1",
     "jiti": "2.7.0",
     "prettier": "3.9.6",
     "tailwindcss": "3.4.19",
