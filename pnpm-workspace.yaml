@@ -11,4 +11,4 @@ allowBuilds:
 
 overrides:
   minimatch: 10.2.6
-  picomatch: 4.0.5
+  picomatch: 4.0.7
