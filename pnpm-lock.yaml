@@ -2259,8 +2259,8 @@ packages:
       picomatch:
         optional: true
 
-  fflate@0.6.10:
-    resolution: {integrity: sha512-IQrh3lEPM93wVCEczc9SaAOvkmcoQn/G8Bo1e8ZPlY3X3bnAxWaBdvTdvM1hP62iZp0BXWDy4vTAy4fF0+Dlpg==}
+  fflate@0.6.11:
+    resolution: {integrity: sha512-3JyEFWGjFn7zHmoa9+zG1BmW7X2okcmAB+0Cnu9UFbVs/jCBnl2A8o065ZlXiw145K3eBM3uLuzrYXC0RK7eDg==}
 
   fflate@0.8.2:
     resolution: {integrity: sha512-cPJU47OaAoCbg0pBvzsgpTPhmhqI5eJjh/JIu8tPj5q+T7iLvW/JAYUqmE7KOB4R1ZyEhzBaIQpQpardBF5z8A==}
@@ -5593,7 +5593,7 @@ snapshots:
     optionalDependencies:
       picomatch: 4.0.7
 
-  fflate@0.6.10: {}
+  fflate@0.6.11: {}
 
   fflate@0.8.2: {}
 
@@ -6705,7 +6705,7 @@ snapshots:
       '@types/offscreencanvas': 2019.7.3
       '@types/webxr': 0.5.24
       draco3d: 1.5.7
-      fflate: 0.6.10
+      fflate: 0.6.11
       potpack: 1.0.2
       three: 0.186.0
 
