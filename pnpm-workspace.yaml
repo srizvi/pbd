@@ -10,5 +10,4 @@ allowBuilds:
   sharp: true
 
 overrides:
-  minimatch: 10.2.6
   picomatch: 4.0.7
