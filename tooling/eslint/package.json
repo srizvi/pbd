@@ -21,12 +21,12 @@
     "eslint-plugin-react": "7.37.5",
     "eslint-plugin-react-hooks": "7.1.1",
     "eslint-plugin-turbo": "2.11.5",
-    "typescript-eslint": "8.70.0"
+    "typescript-eslint": "8.72.0"
   },
   "devDependencies": {
     "@pbn/prettier-config": "workspace:*",
     "@pbn/tsconfig": "workspace:*",
-    "eslint": "10.10.0",
+    "eslint": "10.13.0",
     "prettier": "3.9.9",
     "typescript": "6.0.3"
   },
