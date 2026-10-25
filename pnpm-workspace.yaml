@@ -8,3 +8,9 @@ nodeLinker: hoisted
 allowBuilds:
   esbuild: true
   sharp: true
+
+# GHSA-rj75-hqrm-r3gf: Tailwind 3, postcss-nested and Typography require parser 6.
+# Parser 7.1.7 approved after review of the 7.x insertion changes.
+# Retire when these parents resolve a patched parser without an override.
+overrides:
+  'postcss-selector-parser@<7.1.6': 7.1.7
