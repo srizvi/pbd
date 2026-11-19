@@ -18,7 +18,7 @@ export default function Logo({ className, href }: LogoProps) {
         xmlns="http://www.w3.org/2000/svg"
       >
         <g id="color">
-          <circle cx="36" cy="36.0001" r="28" fill="#61b2e4" />
+          <circle cx="36" cy="36.0001" r="28" fill="oklch(0.732041 0.107706 237.784)" />
         </g>
       </svg>
     </>

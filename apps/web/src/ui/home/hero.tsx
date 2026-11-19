@@ -8,7 +8,7 @@ export function Hero() {
     <div className="relative isolate overflow-hidden rounded-2xl border bg-card md:min-h-[90vh] lg:rounded-3xl">
       <svg
         aria-hidden="true"
-        className="absolute inset-0 -z-10 h-full w-full stroke-border [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]"
+        className="absolute inset-0 -z-10 h-full w-full [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)] stroke-border"
       >
         <defs>
           <pattern
@@ -51,7 +51,7 @@ export function Hero() {
               Redefine impossible
             </span>
           </h1>
-          <p className="mx-auto mt-6 max-w-3xl text-pretty text-lg leading-8 text-muted-foreground lg:text-xl">
+          <p className="mx-auto mt-6 max-w-3xl text-lg leading-8 text-pretty text-muted-foreground lg:text-xl">
             For those already at the top, we engineer the next summit. Our strategies push the
             boundaries of what's achievable, ensuring you stay lightyears ahead.
           </p>

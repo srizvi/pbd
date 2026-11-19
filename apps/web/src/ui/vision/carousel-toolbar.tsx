@@ -4,7 +4,6 @@ import { AnimatePresence, motion } from 'motion/react';
 import { useHotkeys } from 'react-hotkeys-hook';
 import { FaXTwitter } from 'react-icons/fa6';
 
-import { cn } from '@pbn/ui';
 import { Button } from '@pbn/ui/button';
 import { useCarousel } from '@pbn/ui/carousel';
 import {
@@ -68,10 +67,19 @@ const popupCenter = ({
 };
 
 export function CarouselToolbar({ views }: Props) {
-  const api = useCarousel();
+  const { canScrollPrev, canScrollNext, scrollPrev, scrollNext, scrollTo } = useCarousel();
 
-  useHotkeys('arrowRight', () => api.scrollNext(), [api]);
-  useHotkeys('arrowLeft', () => api.scrollPrev(), [api]);
+  useHotkeys(
+    'arrowRight, arrowLeft',
+    (event) => {
+      // The carousel handles arrow keys when focus is inside its region.
+      if (event.defaultPrevented) return;
+
+      const scroll = event.key === 'ArrowRight' ? scrollNext : scrollPrev;
+      scroll();
+    },
+    [scrollNext, scrollPrev],
+  );
 
   const handleOnShare = () => {
     const popup = popupCenter({
@@ -116,7 +124,7 @@ export function CarouselToolbar({ views }: Props) {
 
                 <Tooltip>
                   <TooltipTrigger asChild>
-                    <button type="button" onClick={() => api.scrollTo(100)}>
+                    <button type="button" onClick={() => scrollTo(100)}>
                       <Icons.Calendar size={18} className="text-alternate" />
                     </button>
                   </TooltipTrigger>
@@ -147,11 +155,10 @@ export function CarouselToolbar({ views }: Props) {
                     <TooltipTrigger asChild>
                       <button
                         type="button"
-                        disabled={!api.canScrollPrev}
-                        className={cn(!api.canScrollPrev && 'opacity-50')}
-                        onClick={() => {
-                          api.scrollPrev();
-                        }}
+                        aria-label="Previous slide"
+                        disabled={!canScrollPrev}
+                        className="disabled:opacity-50"
+                        onClick={scrollPrev}
                       >
                         <Icons.ChevronLeft className="h-6 w-6 text-foreground dark:text-white" />
                       </button>
@@ -167,11 +174,10 @@ export function CarouselToolbar({ views }: Props) {
                     <TooltipTrigger asChild>
                       <button
                         type="button"
-                        disabled={!api.canScrollNext}
-                        className={cn(!api.canScrollNext && 'opacity-50')}
-                        onClick={() => {
-                          api.scrollNext();
-                        }}
+                        aria-label="Next slide"
+                        disabled={!canScrollNext}
+                        className="disabled:opacity-50"
+                        onClick={scrollNext}
                       >
                         <Icons.ChevronRight className="h-6 w-6 text-foreground dark:text-white" />
                       </button>

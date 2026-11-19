@@ -4,7 +4,7 @@ export function Intro() {
   return (
     <div id="intro" className="px-6 py-32 lg:px-8">
       <div className="mx-auto max-w-3xl text-base/7 text-muted-foreground">
-        <h2 className="mt-2 text-pretty text-4xl font-semibold tracking-tight text-foreground sm:text-5xl">
+        <h2 className="mt-2 text-4xl font-semibold tracking-tight text-pretty text-foreground sm:text-5xl">
           Convert AI spends into board-ready returns within 18 months
         </h2>
         <p className="mt-6 text-xl/8 text-muted-foreground">
@@ -28,7 +28,7 @@ export function Intro() {
             something you can report to your board with specific numbers.
           </p>
 
-          <h2 className="mt-16 text-pretty text-3xl font-semibold tracking-tight text-foreground">
+          <h2 className="mt-16 text-3xl font-semibold tracking-tight text-pretty text-foreground">
             Four clear stages with compounding returns
           </h2>
 
@@ -82,7 +82,7 @@ export function Intro() {
             </li>
           </ul>
 
-          <h2 className="mt-16 text-pretty text-3xl font-semibold tracking-tight text-foreground">
+          <h2 className="mt-16 text-3xl font-semibold tracking-tight text-pretty text-foreground">
             Concrete, capitalized returns
           </h2>
           <p className="mt-6">

@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 
 export default function Page() {
   return (
-    <div className="fixed bottom-0 left-0 right-0 top-0 h-screen">
+    <div className="fixed top-0 right-0 bottom-0 left-0 h-screen">
       <VisionCarousel />
     </div>
   );

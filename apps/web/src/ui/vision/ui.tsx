@@ -11,7 +11,7 @@ export function Card({ title, description, children, className }: CardProps) {
   return (
     <div
       className={cn(
-        'flex flex-col space-y-4 rounded-xl border bg-card px-6 pb-6 pt-8 shadow-md',
+        'flex flex-col space-y-4 rounded-xl border bg-card px-6 pt-8 pb-6 shadow-md',
         className,
       )}
     >

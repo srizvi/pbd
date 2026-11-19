@@ -27,7 +27,7 @@ export function Cta() {
           <svg
             viewBox="0 0 1024 1024"
             aria-hidden="true"
-            className="absolute left-1/2 top-1/2 -z-10 h-[64rem] w-[64rem] -translate-x-1/2 [mask-image:radial-gradient(closest-side,white,transparent)]"
+            className="absolute top-1/2 left-1/2 -z-10 h-[64rem] w-[64rem] -translate-x-1/2 [mask-image:radial-gradient(closest-side,white,transparent)]"
           >
             <circle
               r={512}
@@ -38,8 +38,8 @@ export function Cta() {
             />
             <defs>
               <radialGradient id="827591b1-ce8c-4110-b064-7cb85a0b1217">
-                <stop stopColor="#1746A2" />
-                <stop offset={1} stopColor="#FF371D" />
+                <stop stopColor="oklch(0.422687 0.15766 261.9228)" />
+                <stop offset={1} stopColor="oklch(0.649988 0.236752 30.9753)" />
               </radialGradient>
             </defs>
           </svg>

@@ -4,7 +4,11 @@
     "lib": ["dom", "dom.iterable", "ES2022"],
     "types": ["node", "react"],
     "jsx": "preserve",
-    "tsBuildInfoFile": "node_modules/.cache/tsbuildinfo.json"
+    "tsBuildInfoFile": "node_modules/.cache/tsbuildinfo.json",
+    "paths": {
+      "#components": ["./src"],
+      "#components/*": ["./src/*"]
+    }
   },
   "include": ["*.ts", "src"],
   "exclude": ["node_modules"]

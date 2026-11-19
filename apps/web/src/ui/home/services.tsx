@@ -27,10 +27,10 @@ export function Services() {
   return (
     <section className="relative">
       <div
-        className="absolute left-1/2 top-0 -z-10 -translate-x-1/2 -translate-y-1/2"
+        className="absolute top-0 left-1/2 -z-10 -translate-x-1/2 -translate-y-1/2"
         aria-hidden="true"
       >
-        <div className="h-80 w-80 rounded-full bg-gradient-to-tr from-primary to-alternate opacity-40 blur-[160px]" />
+        <div className="h-80 w-80 rounded-full bg-linear-to-tr/srgb from-primary to-alternate opacity-40 blur-[160px]" />
       </div>
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <div className="py-12 md:py-20">
@@ -48,10 +48,10 @@ export function Services() {
               <div className="h-80 w-80 rounded-full bg-primary opacity-70 blur-[160px]" />
             </div>
             <div className="aspect-video w-full -rotate-1 rounded-2xl border bg-card px-5 py-3 shadow-xl transition duration-300 group-hover:-rotate-0">
-              <div className="relative mb-8 flex items-center justify-between before:block before:h-[9px] before:w-[41px] before:bg-[length:16px_9px] before:[background-image:radial-gradient(circle_at_4.5px_4.5px,_hsl(var(--muted-foreground))_4.5px,_transparent_0)] after:w-[41px]">
+              <div className="relative mb-8 flex items-center justify-between before:block before:h-[9px] before:w-[41px] before:[background-image:radial-gradient(circle_at_4.5px_4.5px,_var(--muted-foreground)_4.5px,_transparent_0)] before:bg-[length:16px_9px] after:w-[41px]">
                 <span className="text-[13px] font-semibold">AI Regession Analysis</span>
               </div>
-              <div className="whitespace-pre-wrap break-words font-mono text-sm text-muted-foreground blur-sm transition duration-300 group-hover:blur-none [&_span]:opacity-0">
+              <div className="font-mono text-sm wrap-break-word whitespace-pre-wrap text-muted-foreground blur-sm transition duration-300 group-hover:blur-none [&_span]:opacity-0">
                 <span className="animate-[code-1_10s_infinite] text-foreground">
                   import tensorflow as tf
                 </span>{' '}
@@ -86,7 +86,7 @@ export function Services() {
                   alt="Overlay 01"
                 />
               </div>
-              <div className="delay-50 pointer-events-none mb-[3.5%] translate-y-2 transition duration-300 group-hover:translate-y-0 group-hover:opacity-0">
+              <div className="pointer-events-none mb-[3.5%] translate-y-2 transition delay-50 duration-300 group-hover:translate-y-0 group-hover:opacity-0">
                 <Image
                   src="/images/features-02-overlay-02.png"
                   width={500}
@@ -105,7 +105,7 @@ export function Services() {
               </div>
             </div>
           </div>
-          <div className="grid overflow-hidden border-y [border-image:linear-gradient(to_right,transparent,hsl(var(--border)),transparent)_1] lg:grid-cols-3 [&>*]:relative [&>*]:p-6 [&>*]:before:absolute [&>*]:before:bg-gradient-to-b [&>*]:before:from-border/80 [&>*]:before:via-border [&>*]:before:[block-size:100%] [&>*]:before:[inline-size:1px] [&>*]:before:[inset-block-start:0] [&>*]:before:[inset-inline-start:-1px] md:[&>*]:px-10 md:[&>*]:py-12">
+          <div className="grid overflow-hidden border-y [border-image:linear-gradient(to_right,transparent,var(--border),transparent)_1] lg:grid-cols-3 [&>*]:relative [&>*]:p-6 [&>*]:before:absolute [&>*]:before:[inset-inline-start:-1px] [&>*]:before:[inset-block-start:0] [&>*]:before:bg-linear-to-b/srgb [&>*]:before:from-border/80 [&>*]:before:via-border [&>*]:before:[block-size:100%] [&>*]:before:[inline-size:1px] md:[&>*]:px-10 md:[&>*]:py-12">
             {services.map((service, index) => (
               <article key={index}>
                 <h3 className="mb-2 flex items-center space-x-2 text-lg font-semibold">

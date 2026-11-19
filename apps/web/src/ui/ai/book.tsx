@@ -12,7 +12,7 @@ export function Book() {
           <h2 className="text-4xl font-semibold tracking-tight text-foreground sm:text-5xl">
             Start with a Conversation
           </h2>
-          <p className="mt-8 text-pretty text-lg font-medium text-muted-foreground sm:text-balance sm:text-xl/8">
+          <p className="mt-8 text-lg font-medium text-pretty text-muted-foreground sm:text-xl/8 sm:text-balance">
             Schedule time with a principal. We&apos;ll discuss your board&apos;s expectations, your
             current AI initiatives, and whether we can deliver the returns you need.
           </p>

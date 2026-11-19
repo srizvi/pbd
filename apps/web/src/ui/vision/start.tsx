@@ -7,7 +7,7 @@ export function Start() {
       <div className="relative isolate flex min-h-[90vh] items-center justify-center overflow-hidden rounded-2xl border bg-card lg:rounded-3xl">
         <svg
           aria-hidden="true"
-          className="absolute inset-0 -z-10 h-full w-full stroke-border [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]"
+          className="absolute inset-0 -z-10 h-full w-full [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)] stroke-border"
         >
           <defs>
             <pattern

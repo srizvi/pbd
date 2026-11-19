@@ -7,7 +7,7 @@ export function Book() {
   const { theme } = useTheme();
   return (
     <div className="relative min-h-screen w-screen">
-      <div className="absolute left-4 right-4 top-4 flex items-center justify-between text-lg md:left-8 md:right-8 md:top-8">
+      <div className="absolute top-4 right-4 left-4 flex items-center justify-between text-lg md:top-8 md:right-8 md:left-8">
         <span>Book a meeting</span>
         <Logo href className="h-8 w-auto" />
       </div>
