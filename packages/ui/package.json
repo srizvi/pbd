@@ -25,26 +25,26 @@
     "@radix-ui/react-label": "2.1.17",
     "@radix-ui/react-slot": "1.5.0",
     "@radix-ui/react-tooltip": "1.4.1",
-    "class-variance-authority": "0.7.1",
+    "class-variance-authority": "catalog:utils",
     "embla-carousel-react": "8.6.0",
-    "next-themes": "0.4.6",
+    "next-themes": "catalog:frontend",
     "react-icons": "5.7.0",
-    "sonner": "2.0.8",
-    "tailwind-merge": "3.7.0"
+    "sonner": "catalog:frontend",
+    "tailwind-merge": "catalog:frontend"
   },
   "devDependencies": {
     "@pbn/eslint-config": "workspace:*",
     "@pbn/prettier-config": "workspace:*",
     "@pbn/tsconfig": "workspace:*",
-    "@types/node": "22.20.5",
-    "@types/react": "19.3.0",
-    "eslint": "10.15.0",
-    "prettier": "3.10.1",
-    "react": "19.3.1",
-    "typescript": "6.0.3"
+    "@types/node": "catalog:types",
+    "@types/react": "catalog:types",
+    "eslint": "catalog:lint",
+    "prettier": "catalog:lint",
+    "react": "catalog:framework",
+    "typescript": "catalog:types"
   },
   "peerDependencies": {
-    "react": "19.3.1"
+    "react": "catalog:framework"
   },
   "prettier": "@pbn/prettier-config"
 }

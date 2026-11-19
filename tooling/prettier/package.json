@@ -13,12 +13,12 @@
   },
   "dependencies": {
     "@ianvs/prettier-plugin-sort-imports": "4.7.1",
-    "prettier": "3.10.1",
-    "prettier-plugin-tailwindcss": "0.8.1"
+    "prettier": "catalog:lint",
+    "prettier-plugin-tailwindcss": "catalog:lint"
   },
   "devDependencies": {
     "@pbn/tsconfig": "workspace:*",
-    "typescript": "6.0.3"
+    "typescript": "catalog:types"
   },
   "prettier": "@pbn/prettier-config"
 }
