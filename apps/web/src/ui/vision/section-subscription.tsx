@@ -5,14 +5,14 @@ import { Card } from '#/ui/vision/ui';
 export function SectionSubscription() {
   return (
     <div className="relative min-h-screen w-screen">
-      <div className="absolute left-4 right-4 top-4 flex justify-between text-lg md:left-8 md:right-8">
+      <div className="absolute top-4 right-4 left-4 flex justify-between text-lg md:right-8 md:left-8">
         <span>How we will make money</span>
-        <span className="text-[#878787]">
+        <span className="text-vision-muted">
           <Link href="/">midday.ai</Link>
         </span>
       </div>
       <div className="container flex min-h-screen flex-col justify-center">
-        <div className="h-[580px] overflow-auto px-4 pb-[100px] md:h-auto md:px-0 md:pb-0 md:pt-0">
+        <div className="h-[580px] overflow-auto px-4 pb-[100px] md:h-auto md:px-0 md:pt-0 md:pb-0">
           <div className="mb-4">
             <h2 className="text-2xl">Tiers</h2>
           </div>
@@ -24,7 +24,7 @@ export function SectionSubscription() {
               </span>
 
               <h2 className="text-2xl">Free</h2>
-              <p className="text-center text-sm text-[#878787]">
+              <p className="text-center text-sm text-vision-muted">
                 We will offer a free limited plan for customers to get to know the system.
               </p>
             </Card>
@@ -35,7 +35,7 @@ export function SectionSubscription() {
               </span>
 
               <h2 className="text-2xl">TBD/ mo</h2>
-              <p className="text-center text-sm text-[#878787]">
+              <p className="text-center text-sm text-vision-muted">
                 This is the price new users will pay when we launch. The price is yet to be
                 determined.
               </p>
@@ -47,7 +47,7 @@ export function SectionSubscription() {
               </span>
 
               <h2 className="text-2xl">TBD</h2>
-              <p className="text-center text-sm text-[#878787]">
+              <p className="text-center text-sm text-vision-muted">
                 This plan will be offered to bigger companies with lots of seats. This will be
                 licensed based and the price is yet to be determined.
               </p>
@@ -61,7 +61,7 @@ export function SectionSubscription() {
           <div className="grid gap-8 px-4 md:grid-cols-3 md:px-0 md:pt-0">
             <Card className="pb-8">
               <h2>Team seats</h2>
-              <p className="text-center text-sm text-[#878787]">
+              <p className="text-center text-sm text-vision-muted">
                 Additional team members will be per seat pricing. The team will have the ability to
                 invite how many users they want.
               </p>
@@ -69,7 +69,7 @@ export function SectionSubscription() {
 
             <Card className="pb-8">
               <h2>Vault storage</h2>
-              <p className="text-center text-sm text-[#878787]">
+              <p className="text-center text-sm text-vision-muted">
                 A limit will be set to the storage since this is also a moving cost for us.
                 Everything above that limit will cost the users extra. Price is yet to be
                 determined.
@@ -78,7 +78,7 @@ export function SectionSubscription() {
 
             <Card className="pb-8">
               <h2>Custom domain</h2>
-              <p className="text-center text-sm text-[#878787]">
+              <p className="text-center text-sm text-vision-muted">
                 If the user want a custom inbox email, for example acme.inbox@pbn.ai, we can provide
                 this for an additional fee.
               </p>
@@ -87,9 +87,9 @@ export function SectionSubscription() {
 
           <div className="px-4 md:px-0">
             <a href="https://midday.ai/engine" target="_blank" rel="noreferrer" className="block">
-              <div className="ful-w mt-8 flex flex-col items-center justify-center space-y-4 border border-border bg-[#121212] p-4 px-6 pb-8 text-center">
+              <div className="ful-w mt-8 flex flex-col items-center justify-center space-y-4 border border-border bg-[oklch(0.182204_0_0)] p-4 px-6 pb-8 text-center">
                 <h2>Engine</h2>
-                <p className="max-w-[800px] text-center text-sm text-[#878787]">
+                <p className="max-w-[800px] text-center text-sm text-vision-muted">
                   Midday Engine streamlines banking integrations with a single API, effortlessly
                   connecting to multiple providers and get one unified format and UI. We currently
                   utilize our Engine internally, but we will soon offer it as a paid service.

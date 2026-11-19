@@ -24,7 +24,7 @@ const navigation: { main: NavigationItem[] } = {
 
 export function Footer() {
   return (
-    <footer className="mt-16 w-full border-t bg-[#0A070D]">
+    <footer className="mt-16 w-full border-t bg-[oklch(0.13634_0.014692_308.368)]">
       <div className="mx-auto max-w-7xl overflow-hidden px-6 py-20 sm:py-24 lg:px-8">
         <div className="mb-8 flex justify-center">
           <Logo className="size-8 md:size-16" />
@@ -38,7 +38,7 @@ export function Footer() {
               {item.disabled ? (
                 <span
                   className={cn(
-                    'cursor-not-allowed leading-6 text-[#EBE4F1] opacity-50',
+                    'cursor-not-allowed leading-6 text-[oklch(0.928131_0.0189_309.7884)] opacity-50',
                     'pointer-events-none',
                   )}
                   aria-disabled="true"
@@ -48,7 +48,7 @@ export function Footer() {
               ) : (
                 <Link
                   href={item.href}
-                  className="leading-6 text-[#EBE4F1] hover:text-white/80"
+                  className="leading-6 text-[oklch(0.928131_0.0189_309.7884)] hover:text-white/80"
                   aria-label={`Navigate to ${item.name} page in same window`}
                 >
                   {item.name}
@@ -58,10 +58,10 @@ export function Footer() {
           ))}
         </nav>
         <div className="mt-10 flex items-center justify-center space-x-4">
-          <p className="text-xs leading-5 text-[#8D88AA]">
+          <p className="text-xs leading-5 text-[oklch(0.643058_0.05059_291.6515)]">
             © {new Date().getFullYear()} {siteConfig.company}. All Rights Reserved.
           </p>
-          <ThemeToggle className="border-[#1F1627] bg-transparent text-white" />
+          <ThemeToggle className="border-[oklch(0.219791_0.034809_308.0005)] bg-transparent text-white" />
         </div>
       </div>
     </footer>

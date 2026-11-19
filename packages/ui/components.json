@@ -4,14 +4,14 @@
   "rsc": true,
   "tsx": true,
   "tailwind": {
-    "config": "./tailwind.config.ts",
-    "css": "unused.css",
+    "config": "",
+    "css": "../../apps/web/src/styles/globals.css",
     "baseColor": "zinc",
     "cssVariables": true
   },
   "aliases": {
     "utils": "@pbn/ui",
-    "components": "src/",
-    "ui": "src/"
+    "components": "#components",
+    "ui": "#components"
   }
 }

@@ -21,7 +21,7 @@ export function Team() {
     <div className="rounded-3xl bg-secondary py-16 ring-1 ring-foreground/10 md:py-32">
       <div className="mx-auto grid max-w-7xl grid-cols-1 gap-20 px-6 lg:px-8 xl:grid-cols-5">
         <div className="max-w-2xl xl:col-span-2">
-          <h2 className="text-pretty text-4xl font-semibold tracking-tight text-foreground sm:text-5xl">
+          <h2 className="text-4xl font-semibold tracking-tight text-pretty text-foreground sm:text-5xl">
             Your trusted advisors
           </h2>
           <p className="mt-6 text-lg/8 text-muted-foreground">
@@ -30,7 +30,7 @@ export function Team() {
             what they need to build, and delivered the returns they must report.
           </p>
         </div>
-        <ul role="list" className="divide-y divide-gray-200 dark:divide-gray-800 xl:col-span-3">
+        <ul role="list" className="divide-y divide-gray-200 xl:col-span-3 dark:divide-gray-800">
           {people.map((person) => (
             <li
               key={person.name}
