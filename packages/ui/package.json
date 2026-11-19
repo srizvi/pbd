@@ -41,7 +41,8 @@
     "eslint": "catalog:lint",
     "prettier": "catalog:lint",
     "react": "catalog:framework",
-    "typescript": "catalog:types"
+    "typescript": "catalog:types",
+    "typescript-native": "catalog:types"
   },
   "peerDependencies": {
     "react": "catalog:framework"

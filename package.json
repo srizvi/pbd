@@ -26,7 +26,8 @@
     "@turbo/gen": "2.11.11",
     "prettier": "catalog:lint",
     "turbo": "2.11.11",
-    "typescript": "catalog:types"
+    "typescript": "catalog:types",
+    "typescript-native": "catalog:types"
   },
   "prettier": "@pbn/prettier-config"
 }

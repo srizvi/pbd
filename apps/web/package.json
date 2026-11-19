@@ -46,7 +46,8 @@
     "jiti": "catalog:script",
     "prettier": "catalog:lint",
     "tailwindcss": "catalog:build",
-    "typescript": "catalog:types"
+    "typescript": "catalog:types",
+    "typescript-native": "catalog:types"
   },
   "prettier": "@pbn/prettier-config"
 }

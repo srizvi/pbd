@@ -18,7 +18,8 @@
   },
   "devDependencies": {
     "@pbn/tsconfig": "workspace:*",
-    "typescript": "catalog:types"
+    "typescript": "catalog:types",
+    "typescript-native": "catalog:types"
   },
   "prettier": "@pbn/prettier-config"
 }

@@ -28,7 +28,8 @@
     "@pbn/tsconfig": "workspace:*",
     "eslint": "catalog:lint",
     "prettier": "catalog:lint",
-    "typescript": "catalog:types"
+    "typescript": "catalog:types",
+    "typescript-native": "catalog:types"
   },
   "prettier": "@pbn/prettier-config"
 }
